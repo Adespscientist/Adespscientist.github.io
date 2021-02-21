@@ -1,0 +1,152 @@
+body{
+	margin:0;
+}
+
+/*SECTION CONTAINS THE HEADER AND THE SECTION AND THE CONTENT*/
+.zone{
+	/*border:1px solid red;*/
+}
+.header{
+	padding:10px;
+	display:flex;
+	background:#000;
+	height:10vh;
+}
+.logo{
+	width:100px;
+	height:100px;
+	position: absolute;
+	top:0;
+}
+nav{
+	margin-left:auto;
+}
+
+.main-nav{
+	display: flex;
+}
+.main-nav li{
+	padding:12px;
+	list-style-type:none;
+}
+.main-nav li a{
+	color:#fff;
+	font-size:0.8em;
+	font-family:Montserrat, cursive;
+	transition:1s ease;
+	font-weight:bold;
+}
+.main-nav li a:hover{
+	text-decoration: none;
+	color:#444ccc;
+}
+.cover{
+	background-image:url("asset/bg2.jpg"); 
+	display:grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-content: center;
+	height:80vh;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+section p{
+	color:#f5f5f6;
+	font-family:Montserrat, cursive;
+}
+button{
+	
+}
+.h-img:hover{
+	background-image: red;
+}
+.btn{
+	padding:.6em;
+	width:200px;
+	background:transparent;
+	border-color: #444444;
+	transition:1s ease-in;
+}
+.btn:hover{
+		background-color: #444ccc;
+  
+}
+/*SECTION CONTAINS THE HEADER AND THE SECTION AND THE CONTENT*/
+
+.text-centerz{
+	display:grid;
+	justify-content: center;
+}
+.text-centerz h2{
+	margin:2px;
+	padding-top:20px;
+}
+hr{
+	border-color:#444444;
+	width:80px;
+	border-width:.3em;
+}
+.grids{
+	display:grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	grid-gap: 10px;
+	justify-content: center;
+	background-image:url(asset/bgs.jpg);
+
+}
+.box{
+	width:250px;
+	height:200px;
+	padding:30px;
+	background:#444;
+	transition: 1s ease;
+	margin:50px 0 50px 0;
+}
+.box:hover{
+	background:#000;
+	transform: rotate(-7deg);
+}
+
+.container{
+	display:grid;
+	grid-template-columns:repeat(auto-fill minmax(200px 1fr));
+	box-shadow: 1px 1px 22px #ccc;
+	justify-content: center;
+	height:70vh;
+}
+.cont1{
+	padding:30px;
+}
+.info i{
+	padding:10px;
+	color:#444ccc;
+}
+
+@media screen and (max-width: 750px){
+	.cont1{
+		width:20px;
+	}
+	}
+}
+.footer{
+	display:flex;
+	width:100%;
+}
+.foot-wrap{
+	display:flex;
+	flex-direction: column;
+	background:#000;
+	color:#fff;
+}
+.zone1{
+	padding:30px;
+}
+
+.push{
+	margin:20px;
+}
