@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from pixner.net/Sport/sport/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Jun 2021 03:14:44 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- load favicon  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- bootstrap 4 css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- fontawesome  5 css -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="assets/webfonts/flaticon.css">
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- YT player -->
+    <link rel="stylesheet" href="assets/css/YTPlayer.min.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <!-- venobox css -->
+	<link rel="stylesheet" href="assets/css/venobox.css">
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <title>Sport Einstein | Sports Prediction Aggregation</title>
+</head>
+<body>
+	
+	<!-- Hero Area Start -->
+	<div class="heder-slider-area header-bg">
+		<div class="overlay"></div>
+		<!-- support bar start -->
+		<div class="support-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="support-bar-left">
+							<label class="languages" for="language">
+								<select name="language" id="language">
+									<option value="0">EN</option>
+									<option value="1">BN</option>
+									<option value="2">HN</option>
+								</select>
+							</label>
+							<div class="follow-us">
+									<span class="title">	Follow Us :</span>
+									<ul class="social-links">
+										<li>
+											<a href="#">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fab fa-twitter"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="support-bar-right">
+							<ul>
+								<li>
+									<a href="#"> 
+										<i class="fas fa-sign-in-alt"></i>
+										Login
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="far fa-user"></i> Register
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- support bar start -->
+		
+		<!-- Navebar Area start -->
+		<div class="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 p-0">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="navbar-brand" href="index.html">
+								<img src="assets/img/white-BGs.png" alt="">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+								aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="mainmenu">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item active">
+										<a class="nav-link" href="#about">Predictions</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#betradar">VetBet</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#features">Result</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Navebar Area End -->
+
+		<nav class="navbar navbar-b navbar-expand-lg navbar-light ">
+			<!--tips: to change the nav placement use .fixed-top,.fixed-bottom,.sticky-top-->
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Latest News <span class="sr-only">(current)</span></a>
+					</li>
+		
+					<li class="nav-item">
+						<a class="nav-link" href="#">Upcoming Matches</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="#">Live Matches</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">Prediction Tips</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">England</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">Spain</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">France</a>
+					</li>
+		
+				</ul>
+				<div class="select-league">
+					<select name="ap" class="form-select" aria-label="Default select example">
+						<option class=" p-3 m-4" selected>Select a League / Date to view Predictions</option>
+						<optgroup label="International">
+					  
+				  
+					  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+					  <script>
+						const $select = $('select[name="ap"]');
+						const opts = [
+						  {'value':href='champions-league.html', 'text':'Champions League'},
+						  {'value':href='champions-league.html', 'text':'Europa League'},
+						  {'value':href='champions-league.html', 'text':'UEFA  Super Cup'},
+						  {'value':href='champions-league.html', 'text':'Confederaton Cups'},
+						  {'value':href='champions-league.html', 'text':'Copa America'},
+						  {'value':href='champions-league.html', 'text':'Euro 2020 Finals'},
+						  {'value':href='champions-league.html', 'text':'Euro 2020 Qualifying'},
+						  {'value':href='champions-league.html', 'text':'International Friendly'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						];
+				  
+						opts.forEach(function(obj){
+						  $("<option />", {
+							value: obj.value,
+							text: obj.text
+						  }).appendTo($select)
+						});
+				  
+						$select.on("change", function(){
+						  window.location = this.value;
+						});
+					  </script>
+						</optgroup>
+					  <optgroup label="Europa League">
+						<option class=" p-3 m-4" selected>Select a League / Date to view Predictions</option>
+				
+					  <script>
+						const $select = $('select[name="ap"]');
+						const opt = [
+						  {'value':href='champions-league.html', 'text':'champions-league'},
+						  {'value':href='champions-league.html', 'text':'Google UK'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						  {'value':href='champions-league.html', 'text':'Google FR'},
+						];
+				  
+						opts.forEach(function(obj){
+						  $("<option />", {
+							value: obj.value,
+							text: obj.text
+						  }).appendTo($select)
+						});
+				  
+						$select.on("change", function(){
+						  window.location = this.value;
+						});
+					  </script>
+					  </optgroup>
+</select>
+				<!-- <select class="form-select" aria-label="Default select example">
+			
+					<option selected>Select a League / Date to view Predictions</option>
+				
+					<optgroup label="International">
+					
+				</optgroup>
+				<optgroup label="Europe">
+					<option value="2">Two</option>
+					</optgroup>
+					<optgroup label="South America">
+					<option value="3">Three</option>
+				  </select>
+				</optgroup> -->
+			</div>
+		</div>
+		</nav>
+
+		<!-- Navebar Area End -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-12">
+					<div class="single-slider-area">
+						<h4 class="subtitle">SPORT PREDICTION AGGREGATOR</h4>
+						<h1 class="title">PREDICTIONS <span>SERVICE</span></h1>
+						<p>BEGIN LIVE PREDICTIONS TODAY BY CREATING A PREMIUM ACCOUNT TODAY</p>
+						<div class="header-btn-group">
+							<a href="#" class="boxed-btn">Get started</a>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-0">
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="modal-trigger no-select">Bet Slip</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content text-white">
+    <span id="modalClose" class="close no-select">&times;</span>
+    <p class="text-white">
+	Bet Slip Goes here
+	</p>
+  </div>
+</div>
+<script>
+	
+$(document).ready(function(){
+	$('#myBtn').click(function(event){
+		showModal();
+		event.stopPropagation(); 
+	});
+	$('#modalClose').click(function(){
+		hideModal();
+	});
+	
+	// Do nothing when clicking on the modal content
+	$('.modal-content').click(function(event){
+       event.stopPropagation(); 
+    });
+});
+
+function showModal(){
+	$('#myModal').fadeIn('slow');
+		(function fun(){
+			$('.modal-content').css({'transform':'translateX(-10px)'});
+		})();
+}
+
+function hideModal(){
+	$('#myModal').fadeOut('fast');
+		(function fun2(){
+			$('.modal-content').css({ 'transform':'translateX(0px)' });
+		})();
+}
+
+
+
+$(document).on("click", function () {
+    //click outside of ".nav__dropdown" class itself and menu will be hidden
+	hideModal();
+});
+</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- Hero Area Start -->
+<!-- live Game Area Start -->
+	<section class="live-game">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-3">
+						<div class="game-time">
+								<div class="heading-area">
+									<h5 class="title">NEXT MATCH</h5>
+								</div>
+								<div class="game-time-slider">
+									<div class="single-item">
+										<div class="count-area">
+											<div class="deal-counter">
+												<div data-countdown="2021/06/30"></div>
+											</div>
+										</div>
+									</div>
+									<div class="single-ite">
+										<div class="count-area">
+											<div class="deal-counter">
+												<div data-countdown="2021/06/19"></div>
+											</div>
+										</div>
+									</div>
+									<div class="single-ite">
+										<div class="count-area">
+											<div class="deal-counter">
+												<div data-countdown="2021/06/10"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="live-game-bord">
+						<div class="top-area">
+							<div class="left">
+								<img src="assets/img/team1.png" alt="">
+							</div>
+							<div class="center">
+								<span>VS</span>
+							</div>
+							<div class="right">
+								<img src="assets/img/team1.png" alt="">
+							</div>
+						</div>
+						<div class="bottom-area">
+							<p class="text">
+				<i class="fas fa-calendar-alt"></i> June 19, 2021   <i class="fas fa-map-marker-alt"></i> STAIRFORD ROAD STADIUM
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- live Game Area End -->
+
+<div class="" id="list-wrapper">
+	<div class="scroller scroller-left"><i class="fa fa-caret-left"></i></div>
+	  
+	<div class="scroller scroller-right"><i class="fa fa-caret-right"></i></div>
+	<div class="wrapper">
+	<div class="nav nav-tabs list" id="list" role="tablist">
+	
+	</div>
+  
+	</div></div>
+  <div class="tab-content" id="nav-tabContent">
+	<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+		<div class="betting-table">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2">
+					<div class="bett-menu">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+
+							
+						</ul>
+					</div>
+				</div>
+				
+				 <div class="col-xl-8 col-lg-8">
+					<div class="container" id="list1-wrapper">
+						<div class="scroller scroller-left"><i class="fa fa-caret-left"></i></div>
+						  
+						<div class="scroller scroller-right"><i class="fa fa-caret-right"></i></div>
+						<div class="wrapper">
+						<div class="nav nav-tabs list" id="list1" role="tablist">
+						  <li class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-home" aria-selected="true">Premier League</li>
+						   <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-home" aria-selected="true">England International League</li>
+						   <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						<li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						 <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						  <li class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home" aria-selected="true">Home</li>
+						</div>
+					  
+						</div></div>
+                            <div class="tab-content bet-tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="all-sports-tab">
+                                    <div class="sport-content-title">
+                                        <h3>Premier League
+                                            <span class="sport-content-conter">[10] Full Prediction</span>
+                                        </h3>
+									</div>
+									<div class="small-bet">
+										<h6 class="text-muted mt-2">Login account to view full Predictions <a href="#">Login</a></h6>
+									</div>
+                                    <div class="sports-list">
+                                        <h4 class="title">Premeir League</h4>
+                                        <div class="single-sport-box">
+                                            <div class="part-icon">
+                                                <i class="flaticon-football"></i>
+                                            </div>
+                                            <div class="part-team">
+                                                <ul>
+                                                    <li>
+                                                        <span class="team-name">
+                                                            arsenal
+                                                        </span>
+                                                        <span class="score-number">
+                                                            2
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="team-name">
+                                                            everton
+                                                        </span>
+                                                        <span class="score-number">
+                                                            4
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="part-match">
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">1.00</span>
+                                                        <span class="result-for-final">
+                                                            arsenal
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">4.30</span>
+                                                        <span class="result-for-final">
+                                                            draw
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">5.75</span>
+                                                        <span class="result-for-final">
+                                                            everton
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="part-bnonus">
+                                                <span class="bonus-number">+336</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-sport-box">
+                                            <div class="part-icon">
+                                                <i class="flaticon-football"></i>
+                                            </div>
+                                            <div class="part-team">
+                                                <ul>
+                                                    <li>
+                                                        <span class="team-name">
+                                                            Aston Villa
+                                                        </span>
+                                                        <span class="score-number">
+                                                            4
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="team-name">
+                                                            Norwich City
+                                                        </span>
+                                                        <span class="score-number">
+                                                            3
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="part-match">
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">1.52</span>
+                                                        <span class="result-for-final">
+                                                            Aston Villa
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">2.35</span>
+                                                        <span class="result-for-final">
+                                                            draw
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">3.65</span>
+                                                        <span class="result-for-final">
+                                                            Norwich City
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="part-bnonus">
+                                                <span class="bonus-number">+336</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-sport-box">
+                                            <div class="part-icon">
+                                                <i class="flaticon-football"></i>
+                                            </div>
+                                            <div class="part-team">
+                                                <ul>
+                                                    <li>
+                                                        <span class="team-name">
+                                                            West Ham United
+                                                        </span>
+                                                        <span class="score-number">
+                                                            1
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="team-name">
+                                                            Bournemouth
+                                                        </span>
+                                                        <span class="score-number">
+                                                            6
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="part-match">
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">1.50</span>
+                                                        <span class="result-for-final">
+                                                            West Ham United
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">4.45</span>
+                                                        <span class="result-for-final">
+                                                            draw
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="single-place-to-bet">
+                                                    <a href="#">
+                                                        <span class="bet-price">2.75</span>
+                                                        <span class="result-for-final">
+                                                            Bournemouth
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="part-bnonus">
+                                                <span class="bonus-number">+336</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+	</div>
+	<!-------------------------------Second Leage Prediction----------------------->
+	<div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-profile-tab"> <div class="sport-content-title">
+		<h3>England International League
+			<span class="sport-content-conter">[6]</span>
+		</h3>
+	</div>
+	<div class="sports-list">
+		<h4 class="title">England International League</h4>
+		<div class="single-sport-box">
+			<div class="part-icon">
+				<i class="flaticon-football"></i>
+			</div>
+			<div class="part-team">
+				<ul>
+					<li>
+						<span class="team-name">
+							arsenal
+						</span>
+						<span class="score-number">
+							2
+						</span>
+					</li>
+					<li>
+						<span class="team-name">
+							everton
+						</span>
+						<span class="score-number">
+							4
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="part-match">
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">1.00</span>
+						<span class="result-for-final">
+							arsenal
+						</span>
+					</a>
+				</div>
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">4.30</span>
+						<span class="result-for-final">
+							draw
+						</span>
+					</a>
+				</div>
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">5.75</span>
+						<span class="result-for-final">
+							everton
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="part-bnonus">
+				<span class="bonus-number">+336</span>
+			</div>
+		</div>
+		<div class="single-sport-box">
+			<div class="part-icon">
+				<i class="flaticon-football"></i>
+			</div>
+			<div class="part-team">
+				<ul>
+					<li>
+						<span class="team-name">
+							Aston Villa
+						</span>
+						<span class="score-number">
+							4
+						</span>
+					</li>
+					<li>
+						<span class="team-name">
+							Norwich City
+						</span>
+						<span class="score-number">
+							3
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="part-match">
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">1.52</span>
+						<span class="result-for-final">
+							Aston Villa
+						</span>
+					</a>
+				</div>
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">2.35</span>
+						<span class="result-for-final">
+							draw
+						</span>
+					</a>
+				</div>
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">3.65</span>
+						<span class="result-for-final">
+							Norwich City
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="part-bnonus">
+				<span class="bonus-number">+336</span>
+			</div>
+		</div>
+		<div class="single-sport-box">
+			<div class="part-icon">
+				<i class="flaticon-football"></i>
+			</div>
+			<div class="part-team">
+				<ul>
+					<li>
+						<span class="team-name">
+							West Ham United
+						</span>
+						<span class="score-number">
+							1
+						</span>
+					</li>
+					<li>
+						<span class="team-name">
+							Bournemouth
+						</span>
+						<span class="score-number">
+							6
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="part-match">
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">1.50</span>
+						<span class="result-for-final">
+							West Ham United
+						</span>
+					</a>
+				</div>
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">4.45</span>
+						<span class="result-for-final">
+							draw
+						</span>
+					</a>
+				</div>
+				<div class="single-place-to-bet">
+					<a href="#">
+						<span class="bet-price">2.75</span>
+						<span class="result-for-final">
+							Bournemouth
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="part-bnonus">
+				<span class="bonus-number">+336</span>
+			</div>
+		</div>
+	</div>
+
+
+</div></div>
+</div>
+<!-------------------------------Second Leage Prediction----------------------->
+	<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">..asdasdasd.</div>
+  </div>
+  
+
+	<script>
+		function scrollTabs(param){
+  let hidWidth;
+let scrollBarWidths = 40;
+
+let widthOfList = function(){
+  let itemsWidth = 0;
+  $(`#${param} li`).each(function(){
+    let itemWidth = $(this).outerWidth();
+    itemsWidth+=itemWidth;
+  });
+  return itemsWidth;
+};
+
+var widthOfHidden = function(){
+  return (($(`#${param}-wrapper `+'.wrapper').outerWidth())-widthOfList()-getLeftPosi())-scrollBarWidths;
+};
+
+let getLeftPosi = function(){
+  return $(`#${param}`).position().left;
+};
+
+var reAdjust = function(){
+  if (($(`#${param}-wrapper `+'.wrapper').outerWidth()) < widthOfList()) {
+    $(`#${param}-wrapper `+'.scroller-right').show();
+  }
+  else {
+    $(`#${param}-wrapper `+'.scroller-right').hide();
+  }
+  
+  if (getLeftPosi()<0) {
+    $(`#${param}-wrapper `+'.scroller-left').show();
+  }
+  else {
+    $(`#${param}-wrapper `+'.item').animate({left:"-="+getLeftPosi()+"px"},'slow');
+  	$(`#${param}-wrapper `+'.scroller-left').hide();
+  }
+}
+
+reAdjust();
+
+$(window).on('resize',function(e){  
+  	reAdjust();
+});
+let ScrollPosArray=[];
+$(`#${param}-wrapper `+'.scroller-right').click(function() {
+  
+  $(`#${param}-wrapper `+'.scroller-left').fadeIn('slow');
+  
+  
+  let widthOfHidden1 = (-widthOfHidden() < $('.wrapper').outerWidth()) ?          widthOfHidden():-$('.wrapper').outerWidth() 
+  
+  ScrollPosArray.push(widthOfHidden1);
+  console.log(ScrollPosArray)
+  $(`#${param}`).animate({left:"+="+widthOfHidden1+"px"},'slow',function(){
+   // console.log(widthOfHidden())
+    if(-widthOfHidden() <1 ){
+      $(`#${param}-wrapper `+'.scroller-right').fadeOut('slow');
+    }
+  });
+});
+
+$(`#${param}-wrapper `+'.scroller-left').click(function() {
+  if(ScrollPosArray.length !==0){
+    $(`#${param}`).animate({left:"-="+ScrollPosArray[ScrollPosArray.length -1]+"px"},'slow',function(){
+  	ScrollPosArray.pop();
+      if(ScrollPosArray.length ==0){
+        $(`#${param}-wrapper `+'.scroller-right').fadeIn('slow');
+	$(`#${param}-wrapper `+'.scroller-left').fadeOut('slow');
+      }
+      	
+  	});
+  }
+  console.log(ScrollPosArray)
+});    
+}
+scrollTabs("list");
+scrollTabs("list1");
+	</script>
+	
+
+	<!-- footer area start -->
+	<footer class="footer-area footer-bg">
+	<div class="overlay"></div>
+		<div class="footer-top">
+			<div class="container">
+				<div class="subscription-form-area">
+					<div class="row justify-content-center">
+						<div class="col-lg-10 ">
+							<div class="subscription-wrapper">
+								<div class="row">
+									<div class="col-lg-3">
+										<span class="subtitle">Subscribe</span>
+										<h4>For newsletter</h4>
+									</div>
+									<div class="col-lg-9">
+										<div class="subsscribe-form">
+											<form action="https://pixner.net/Sport/sport/index.html">
+													<div class="form-element-x">
+														<input type="email" placeholder="Enter your email address">
+														<div class="icon">
+															<img src="assets/img/rocket-launch-2.png" alt="">
+														</div>
+													</div>
+													<input type="submit" value="Subscribe Now">
+												
+											</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 order-lg-0 order-md-4 order-4">
+						<div class="widget-area about">
+							<div class="widget-title blank"></div>
+							<div class="widget-body">
+								<a href="index.html" class="footer-logo">
+									<img src="assets/img/white-BGs.png" alt="footer logo">
+								</a>
+								<p>Sport Einstein is the most advanced sports Predictions Site &amp; affialiate platform and highest stakes across multiple bookmakers and exchanges.</p>
+								<div class="social-icons">
+									<ul>
+										<li>
+											<a href="#"><i class="fab fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fab fa-twitter"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fab fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-lg-6 col-md-6">
+						<div class="widget-area about">
+							<div class="widget-title">
+								<h4>Navigation Links</h4>
+							</div>
+							<div class="widget-body">
+								<ul class="footer-menu">
+									<li>
+										<a href="#"><i class="fas fa-angle-double-right"></i> Latest News</a>
+									</li>
+									<li>
+										<a href="#"><i class="fas fa-angle-double-right"></i> Upcoming News</a>
+									</li>
+									<li>
+										<a href="#"><i class="fas fa-angle-double-right"></i> Live Updates</a>
+									</li>
+									<li>
+										<a href="#"><i class="fas fa-angle-double-right"></i>Predictions</a>
+									</li>
+									<li>
+										<a href="#"><i class="fas fa-angle-double-right"></i> champions-league</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-area">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						 Copyright © Bepivot 2019.All right reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer area end -->
+
+	<!-- back to top start -->
+	<div class="back-to-top">
+		<div class="icon">
+			<img src="assets/img/rocket-launch.png" alt="">
+		</div>
+	</div>
+	<!-- back to top end -->
+
+	<!-- preloader start -->
+	<div id="preloader">
+		<div class="spinner"></div>
+	</div>
+	<!-- preloader end -->
+	<script src="assets/js/jquery-2.1.1.min.js"></script>
+    <!-- propper -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- bootstrap 4-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- waypoints -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- counterup -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!-- Count down js -->
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<!-- Water bg -->
+    <script src="assets/js/jquery.ripples-min.js"></script>
+	<!-- Particles bg -->
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- YT player -->
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <!-- magnific-popup -->
+    <script src="assets/js/magnific-popup.js"></script>
+    <!-- owl-carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- venobox js -->
+	<script src="assets/js/venobox.min.js"></script>
+    <!-- main-js -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+<!-- Mirrored from pixner.net/Sport/sport/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Jun 2021 03:15:03 GMT -->
+</html>

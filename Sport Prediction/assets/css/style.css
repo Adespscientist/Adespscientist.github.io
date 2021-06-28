@@ -55,6 +55,7 @@ body {
     color: rgba(49, 50, 58, 0.7);
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 h1 {
@@ -1194,185 +1195,326 @@ ul {
     margin-bottom: 30px;
 }
 
+/******************************************************
+    18. Betting begin
 
-/************************************************************
-    18.affiliate area
-************************************************************/
-.affiliate-area {
-    background: url(../img/affeliat.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 120px 0 120px;
-    position: relative;
-}
+    19 Bettings
+ ****************************************************/
 
-.affiliate-area .overlay {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(36, 27, 103);
-    opacity: 0.90;
-}
+    
+.betting {
+    background: #f5f5f5;
+    padding: 120px 0 90px; }
+  
+  .betting-table .bett-menu {
+    margin-bottom: 30px; }
+    .betting-table .bett-menu .nav-tabs {
+      border-radius: 5px 5px 0 0;
+      border-bottom: none; }
+      .betting-table .bett-menu .nav-tabs .nav-item {
+        margin-bottom: 20px;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        background: white; }
+        .betting-table .bett-menu .nav-tabs .nav-item:last-child {
+          margin-right: 0; }
+        .betting-table .bett-menu .nav-tabs .nav-item .nav-link {
+          padding: 20px 0;
+          text-align: center;
+          border-radius: 0;
+          border: none;
+          position: relative;
+          z-index: 2; }
+          .betting-table .bett-menu .nav-tabs .nav-item .nav-link:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: -webkit-linear-gradient(290deg, #008080, #008080);
+            background: -o-linear-gradient(290deg, #008080, #008080);
+            background: linear-gradient(160deg, #008080, #008080);
+            opacity: 0;
+            z-index: -1; }
+          .betting-table .bett-menu .nav-tabs .nav-item .nav-link i {
+            font-size: 35px;
+            margin-bottom: 9px;
+            display: block;
+            color: #383838;
+            opacity: .8; }
+          .betting-table .bett-menu .nav-tabs .nav-item .nav-link .text {
+            display: block;
+            text-transform: uppercase;
+            font-size: 13.5px;
+            font-weight: 500;
+            color: #383838;
+            opacity: .8; }
+          .betting-table .bett-menu .nav-tabs .nav-item .nav-link.active {
+            border-radius: 5px 5px 0 0; }
+            .betting-table .bett-menu .nav-tabs .nav-item .nav-link.active i, .betting-table .bett-menu .nav-tabs .nav-item .nav-link.active .text {
+              color: #fff;
+              opacity: 1; }
+            .betting-table .bett-menu .nav-tabs .nav-item .nav-link.active:after {
+              opacity: 1; }
+            .betting-table .bett-menu .nav-tabs .nav-item .nav-link.active:hover i, .betting-table .bett-menu .nav-tabs .nav-item .nav-link.active:hover .text {
+              color: #fff;
+              opacity: 1; }
+          .betting-table .bett-menu .nav-tabs .nav-item .nav-link:hover i, .betting-table .bett-menu .nav-tabs .nav-item .nav-link:hover .text {
+            color: #008080;
+            opacity: 1; }
+  
+  .betting-table .bet-tab-content .tab-pane .sport-content-title {
+    background: #008080;
+    border-radius: 5px; }
+    .betting-table .bet-tab-content .tab-pane .sport-content-title h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #fff;
+      padding: 17px 30px;
+      margin: 0; }
+      .betting-table .bet-tab-content .tab-pane .sport-content-title h3 .sport-content-conter {
+        display: inline-block;
+        margin-left: 10px;
+        color: #ddd; }
+  
+  .betting-table .bet-tab-content .tab-pane .sports-list {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 0 13px 8px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 0 13px 8px rgba(0, 0, 0, 0.02); }
+    .betting-table .bet-tab-content .tab-pane .sports-list h4.title {
+      font-size: 17px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      color: #777;
+      padding: 15px 30px;
+      margin-bottom: 0px;
+      margin-top: 30px;
+      position: relative;
+      background: #fff;
+      border: 1px solid #ddd;
+      border: none; }
+      .betting-table .bet-tab-content .tab-pane .sports-list h4.title:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: #008080;
+        opacity: .2; }
+      .betting-table .bet-tab-content .tab-pane .sports-list h4.title:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        background: #008080;
+        opacity: .1; }
 
-.affiliate-area .left-content .sub-title {
-    color: #fff;
-}
+        .tab-content .small-bet a{
+            color:#008080;
+            
+            margin-left:10px;
+        }
+    .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      color:#fff;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: #fff;
+      border: 1px solid rgba(221, 221, 221, 0.4);
+      padding: 9px 30px 8px;
+      border-bottom: none;
+      padding-left: 0; }
+      .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box:last-child {
+        border-bottom: 1px solid rgba(221, 221, 221, 0.4); }
+      .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box:nth-child(2) {
+        border-top: none; }
+      .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-icon {
+        font-size: 30px;
+        color: #fff;
+        padding-left: 30px;
+        padding-right: 30px;
+        background: -webkit-linear-gradient(290deg, rgba(248, 27, 100, 0.9), rgba(196, 12, 73, 0.9));
+        background: -o-linear-gradient(290deg, rgba(248, 27, 100, 0.9), rgba(196, 12, 73, 0.9));
+        background: linear-gradient(160deg, rgba(248, 27, 100, 0.9), rgba(196, 12, 73, 0.9));
+        border-radius: 0 10px 10px 0; }
+      .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-team {
+        width: 220px;
+        margin: 0 00px 0 0;
+        border-right: 1px solid #ddd;
+        padding-right: 30px; }
+        .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-team ul li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-team ul li span {
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2a2a2a;
+            opacity: .9;
+            letter-spacing: 0.3px;
+            line-height: 28px; }
+            .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-team ul li span.score-number {
+              color: #008080; }
+      .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-match .single-place-to-bet {
+        display: inline-block;
+        margin-right: 10px; }
+        .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-match .single-place-to-bet:last-child {
+          margin-right: 0; }
+        .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-match .single-place-to-bet a {
+          display: inline-block;
+          width: 140px;
+          text-align: center;
+          padding: 5px 0;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 0.5px;
+          color: #383838;
+          opacity: .9;
+          border: 1px solid rgba(56, 56, 56, 0.3);
+          border-radius: 3px;
+          -webkit-transition: all 0.3s ease-in;
+          -moz-transition: all 0.3s ease-in;
+          -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+          position: relative;
+          overflow: hidden;
+          z-index: 2; }
+          .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-match .single-place-to-bet a:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: -webkit-linear-gradient(290deg, #008080, #008080);
+            background: -o-linear-gradient(290deg, #008080, #008080);
+            background: linear-gradient(160deg, #008080, #008080);
+            z-index: -1;
+            -webkit-transition: all 0.3s ease-in;
+            -moz-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            opacity: 0; }
+          .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-match .single-place-to-bet a:hover {
+            color: #fff;
+            opacity: 1;
+            border-color: #008080; }
+            .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-match .single-place-to-bet a:hover:after {
+              opacity: 1; }
+          .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-match .single-place-to-bet a span {
+            display: block;
+            line-height: 23px;
+            font-size: 14px;
+            text-transform: capitalize;
+            letter-spacing: 0px; }
+          .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-match .single-place-to-bet a span.result-for-final {
+            font-weight: 400; }
+      .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-bnonus {
+        width: 100px; }
+        .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-bnonus .bonus-number {
+          display: inline-block;
+          position: relative;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #008080;
+          border-left: 1px solid #ddd;
+          padding-left: 30px;
+          height: 52px;
+          line-height: 52px; }
+          .betting-table .bet-tab-content .tab-pane .sports-list .single-sport-box .part-bnonus .bonus-number:after {
+            content: '>';
+            margin-left: 6px;
+            text-transform: uppercase;
+            font-weight: 500; }
 
-.affiliate-area .left-content p {
-    color: #dfd6d9;
-}
-
-.affiliate-area .left-content .boxed-btn {
-    margin-top: 30px;
-    background-color: #008080;
-    padding: 8px 35px;
-    color: #fff;
-}
-
-.affiliate-area .left-content .boxed-btn:hover {
-    background: #fff;
-    color: #008080;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper {
-    margin-top: 26px;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box {
-    position: relative;
-    margin-bottom: 20px;
-    display: flex;
-    background-color: #4b47fd;
-    padding: 10px;
-    -webkit-box-shadow: 0 0 5px rgba(101, 99, 99, 0.2);
-    box-shadow: 0 0 5px rgba(101, 99, 99, 0.2);
-    border-radius: 5px;
-    clear: both;
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box:hover {
-    background-color: #008080;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box:hover .icon .icon-inner {
-    border-color: #fff;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box:hover .icon .icon-inner i {
-    color: #fff;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box:hover .content h6 {
-    color: #fff;
-    opacity: 1;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box .icon {
-    display: flex;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box .icon .icon-inner {
-    font-size: 30px;
-    text-align: center;
-    line-height: 60px;
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid #9a9aa1;
-    position: relative;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box .icon .icon-inner i {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #dfd6d9;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box .content {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
-
-.affiliate-area .left-content .feature-list-box-wrapper .single-feature-box .content h6 {
-    font-size: 15px;
-    text-transform: capitalize;
-    color: #dfe1e7;
-    margin-bottom: 0;
-    font-weight: 400;
-    line-height: 24px;
-    align-items: center;
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
-}
-
-.affiliate-area .right-content .img-thumb {
-    position: relative;
-    display: inline-block;
-}
-
-.affiliate-area .right-content .img-thumb .hover {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(75, 71, 253, 0.60);
-    color: #fff;
-}
-
-.affiliate-area .right-content .img-thumb .hover .icon {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    /* IE 9 */
-    -webkit-transform: translate(-50%, -50%);
-    /* Chrome, Safari, Opera */
-    transform: translate(-50%, -50%);
-    display: inline-block;
-    border-radius: 50%;
-    padding: 5px;
-    background-color: rgba(252, 105, 75, 0.3);
-}
-
-.affiliate-area .right-content .img-thumb .hover .icon .icon-inner {
-    width: 60px;
-    height: 60px;
-    background-color: rgba(252, 105, 75, 0.5);
-    border-radius: 50%;
-    position: relative;
-}
-
-.affiliate-area .right-content .img-thumb .hover .icon .icon-inner .icon-wrapper a {
-    position: absolute;
-    left: 4.5px;
-    top: 4.7px;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    background-color: #008080;
-    text-align: center;
-    border-radius: 50%;
-}
-
-
+    .container{
+        position:relative;
+      }
+      .wrapper {
+          position:relative;
+          margin:0 auto;
+          overflow:hidden;
+          padding:5px;
+            height:50px;
+      }
+      
+      .list {
+          position:absolute;
+          left:0px;
+          top:0px;
+            min-width:3000px;
+            margin-left:12px;
+          margin-top:0px;
+      }
+      
+      .list li{
+        color:#000;
+          display:table-cell;
+          position:relative;
+          text-align:center;
+          cursor:grab;
+          cursor:-webkit-grab;
+         
+          vertical-align:middle;
+      }
+      
+      
+      .scroller {
+        position:absolute;
+        text-align:center;
+        cursor:pointer;
+        display:none;
+        padding:-10px;
+        padding-top:11px;
+        white-space:no-wrap;
+        vertical-align:middle;
+        color:#008080;
+        background-color:#fff;
+      }
+      
+      .scroller-right{
+        float:right;
+        right:0;
+      }
+      
+      .scroller-left {
+        float:left;
+        left:0;
+      
+      }
+    
+    .wrapper .nav .nav-1{
+        margin-right:23px;
+        background:red;
+    }
+    
 /************************************************************
     19.latest news area
 ************************************************************/
@@ -1821,6 +1963,7 @@ ul {
 .footer-area {
     position: relative;
     z-index: 0;
+    margin-top:120px;
 }
 
 .footer-area .overlay {
