@@ -1,0 +1,3 @@
+jQuery(document).ready(function($){$('#mstd_current_league').change(function(event){if(window.console){console.log('lm-multi-standings-ajax.js: league changed ... id= '+event.target.id);console.log('league: '+this.value);}
+var e=document.getElementById('mstd_current_season');var selected_season=e.options[e.selectedIndex].value;var data={'action':'multi_league','real_action':'change_league','season':selected_season,'league':event.target.value};jQuery.post(MyAjax.ajaxurl,data,function(response){var object=jQuery.parseJSON(response);if(''!=object.error){alert(object.error);}
+else if(object.hasOwnProperty('seasons')&&object.seasons){jQuery("select#mstd_current_season").html(object.seasons);}});});});
