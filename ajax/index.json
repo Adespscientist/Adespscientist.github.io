@@ -1,0 +1,17 @@
+
+	
+{
+"Status": "200",
+"Data": [{
+"English Premier League": [{
+"Fixture": "Team A - Team B",
+"Date": "2021-05-19",
+"Time": "17:00",
+"Stadium": "Stadium A"
+},
+{
+"Fixture": "Team C - Team D",
+"Date": "2021-05-19",
+"Time": "20:00",
+"Stadium": "Stadium C"
+
