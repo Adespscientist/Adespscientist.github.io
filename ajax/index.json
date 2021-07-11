@@ -1,17 +1,22 @@
-
-	
 {
-"Status": "200",
-"Data": [{
-"English Premier League": [{
-"Fixture": "Team A - Team B",
-"Date": "2021-05-19",
-"Time": "17:00",
-"Stadium": "Stadium A"
-},
-{
-"Fixture": "Team C - Team D",
-"Date": "2021-05-19",
-"Time": "20:00",
-"Stadium": "Stadium C"
-
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
