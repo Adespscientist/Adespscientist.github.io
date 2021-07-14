@@ -1,0 +1,107 @@
+
+ .tabs-wrapper {
+	 margin: 0% 2% 0 10%;
+}
+ .tabs-wrapper input[type=radio] {
+	 display: none;
+}
+.tabs-wrapper img{
+    width:40px;
+    padding:5px;
+}
+ .tabs-wrapper label {
+	 transition: all 0.3s ease-in-out;
+	 display: inline-block;
+	 cursor: pointer;
+	 color: #dbdbd3;
+	 width: 20%;
+	 height: 3em;
+	 background: #3a3a3a;
+	 text-align: center;
+	 line-height: 3em;
+}
+ @media screen and (max-width: 1600px) {
+	 .tabs-wrapper label {
+		 width: 15%;
+	}
+}
+ @media screen and (max-width: 900px) {
+	 .tabs-wrapper label {
+		 width: 20%;
+	}
+}
+ @media screen and (max-width: 600px) {
+	 .tabs-wrapper label {
+		 width: 100%;
+		 display: block;
+		 border-bottom: 2px solid #4d4c47;
+	}
+}
+ .tabs-wrapper label:last-of-type {
+	 border-bottom: none;
+}
+ .tabs-wrapper label:hover {
+	 background: #008080;
+}
+ .tabs-wrapper input[type=radio]:checked + label {
+	 background: #008080
+	 color: #f2f2f2;
+}
+ .tabs-wrapper .tab-body {
+	 position: absolute;
+	 top: -9999px;
+	 opacity: 0;
+	 padding: 10px;
+	 transition: opacity 0.5s ease-in;
+     
+}
+.borders{
+
+    border-right:1px solid rgb(39, 39, 39);
+    margin:2px;
+}
+.match-one{
+    margin-bottom:30px;
+  
+    
+}
+.right-b{
+    font-weight:bold;
+    font-size:20px;
+
+}
+.tab-body-wrapper .btns{
+    padding:10px;
+    width:200px;
+    background:#008080;
+    color:#fff;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    transition: .1s ease-in;
+    
+}
+.tab-body-wrapper .btns:hover{
+    background:#019999;
+    transition: .1s ease-in;
+}
+ @media screen and (max-width: 600px) {
+	 .tabs-wrapper {
+		 margin: 0;
+	}
+}
+ .tab-body-wrapper {
+	 /* background: #f7eec6; */
+	 border-top: #008080 5px solid;
+}
+ @media screen and (max-width: 600px) {
+	 .tab-body-wrapper {
+		 border: none;
+	}
+}
+ #tab1:checked ~ .tab-body-wrapper #tab-body-1, #tab2:checked ~ .tab-body-wrapper #tab-body-2, #tab3:checked ~ .tab-body-wrapper #tab-body-3, #tab4:checked ~ .tab-body-wrapper #tab-body-4 {
+	 position: relative;
+	 top: 0px;
+	 opacity: 1;
+}
+ 
