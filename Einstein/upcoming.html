@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- load favicon  -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- bootstrap 4 css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="league.css">
+	<!-- fontawesome  5 css -->
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<!-- flaticon -->
+	<link rel="stylesheet" href="assets/webfonts/flaticon.css">
+	<!-- magnific-popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- YT player -->
+	<link rel="stylesheet" href="assets/css/YTPlayer.min.css">
+	<!-- owl-carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- venobox css -->
+	<link rel="stylesheet" href="assets/css/venobox.css">
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="league.css">
+
+	<title>Sport Einstein | Sports Prediction Aggregation</title>
+</head>
+<script>
+	
+</script>
+<body>
+
+
+
+
+	<!-- Hero Area Start -->
+	<div class="heder-slider-areas header-bg">
+		
+		<div class="overlay"></div>
+		<!-- support bar start -->
+		<div class="support-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="support-bar-left">
+							<label class="languages" for="language">
+								<select name="language" id="language">
+									<option value="0">EN</option>
+									<option value="1">BN</option>
+									<option value="2">HN</option>
+								</select>
+							</label>
+							<div class="follow-us">
+								<span class="title"> Follow Us :</span>
+								<ul class="social-links">
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="support-bar-right">
+							<ul>
+								<li>
+									<a href="login.html">
+										<i class="fas fa-sign-in-alt"></i>
+										Login
+									</a>
+								</li>
+								<li>
+									<a href="register.html">
+										<i class="far fa-user"></i> Register
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- support bar start -->
+
+		<!-- Navebar Area start -->
+		<div class="container">
+			<nav class="navbar">
+				<img src="assets/img/white-BGs.png">
+				<ul class="ml-auto">
+					<li class="nav-list">
+						<a href="#" class="nav-link1">Vetbet</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="navbar">
+				<ul class="">
+					<li class="nav-item active nav-0">
+						<a class="nav-link" href="#about">Latest News</a>
+					</li>
+					<li class="nav-item nav-0">
+						<a class="nav-link" href="upcoming.html">Upcoming Matches</a>
+					</li>
+
+					<li class="nav-item rec nav-0">
+						<a class="nav-link" href="#features">  <span class="pulse"></span>Live Matches</a>
+						 
+					</li>
+
+					
+				</ul>
+			</nav>
+		</div>
+		<!-- Navebar Area End -->
+    
+		<!-- Navebar Area start -->
+		
+
+		<!-- Navebar Area End -->
+
+	
+				<div class="col-lg-3 col-md-0">
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn" class="modal-trigger no-select">Bet Slip</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						<div id="modal-content" class="modal-content text-white">
+							<span id="modalClose" class="close no-select">&times;</span>
+							<p class="text-white">
+								Bet Slip Goes here
+							</p>
+						</div>
+					</div>
+					<script>
+
+						$(document).ready(function () {
+							$('#myBtn').click(function (event) {
+								showModal();
+								event.stopPropagation();
+							});
+							$('#modalClose').click(function () {
+								hideModal();
+							});
+
+							// Do nothing when clicking on the modal content
+							$('.modal-content').click(function (event) {
+								event.stopPropagation();
+							});
+						});
+
+						function showModal() {
+							$('#myModal').fadeIn('slow');
+							(function fun() {
+								$('.modal-content').css({ 'transform': 'translateX(-10px)' });
+							})();
+						}
+
+						function hideModal() {
+							$('#myModal').fadeOut('fast');
+							(function fun2() {
+								$('.modal-content').css({ 'transform': 'translateX(0px)' });
+							})();
+						}
+
+
+
+						$(document).on("click", function () {
+							//click outside of ".nav__dropdown" class itself and menu will be hidden
+							hideModal();
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Hero Area Start -->
+	<!-- live Game Area Start -->
+
+
+
+	
+	<script>
+		function scrollTabs(param) {
+			let hidWidth;
+			let scrollBarWidths = 40;
+
+			let widthOfList = function () {
+				let itemsWidth = 0;
+				$(`#${param} li`).each(function () {
+					let itemWidth = $(this).outerWidth();
+					itemsWidth += itemWidth;
+				});
+				return itemsWidth;
+			};
+
+			var widthOfHidden = function () {
+				return (($(`#${param}-wrapper ` + '.wrapper').outerWidth()) - widthOfList() - getLeftPosi()) - scrollBarWidths;
+			};
+
+			let getLeftPosi = function () {
+				return $(`#${param}`).position().left;
+			};
+
+			var reAdjust = function () {
+				if (($(`#${param}-wrapper ` + '.wrapper').outerWidth()) < widthOfList()) {
+					$(`#${param}-wrapper ` + '.scroller-right').show();
+				}
+				else {
+					$(`#${param}-wrapper ` + '.scroller-right').hide();
+				}
+
+				if (getLeftPosi() < 0) {
+					$(`#${param}-wrapper ` + '.scroller-left').show();
+				}
+				else {
+					$(`#${param}-wrapper ` + '.item').animate({ left: "-=" + getLeftPosi() + "px" }, 'slow');
+					$(`#${param}-wrapper ` + '.scroller-left').hide();
+				}
+			}
+
+			reAdjust();
+
+			$(window).on('resize', function (e) {
+				reAdjust();
+			});
+			let ScrollPosArray = [];
+			$(`#${param}-wrapper ` + '.scroller-right').click(function () {
+
+				$(`#${param}-wrapper ` + '.scroller-left').fadeIn('slow');
+
+
+				let widthOfHidden1 = (-widthOfHidden() < $('.wrapper').outerWidth()) ? widthOfHidden() : -$('.wrapper').outerWidth()
+
+				ScrollPosArray.push(widthOfHidden1);
+				console.log(ScrollPosArray)
+				$(`#${param}`).animate({ left: "+=" + widthOfHidden1 + "px" }, 'slow', function () {
+					// console.log(widthOfHidden())
+					if (-widthOfHidden() < 1) {
+						$(`#${param}-wrapper ` + '.scroller-right').fadeOut('slow');
+					}
+				});
+			});
+
+			$(`#${param}-wrapper ` + '.scroller-left').click(function () {
+				if (ScrollPosArray.length !== 0) {
+					$(`#${param}`).animate({ left: "-=" + ScrollPosArray[ScrollPosArray.length - 1] + "px" }, 'slow', function () {
+						ScrollPosArray.pop();
+						if (ScrollPosArray.length == 0) {
+							$(`#${param}-wrapper ` + '.scroller-right').fadeIn('slow');
+							$(`#${param}-wrapper ` + '.scroller-left').fadeOut('slow');
+						}
+
+					});
+				}
+				console.log(ScrollPosArray)
+			});
+		}
+		scrollTabs("list");
+		scrollTabs("list1");
+	</script>
+
+
+	<!-- upcoming match begin -->
+	<div class="upcoming-match" id="upcoming_match">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-6 col-lg-6 col-md-8">
+					<div class="section-title">
+						<h2>Upcoming Match</h2>
+						<p>Sport Einstein shows real time odds for Prediction with the higher stakes you can get. We
+							place your bets in various bMakers to do highest liquidity</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 col-lg-6">
+					<div class="single-match">
+						<div class="part-head">
+							<h5 class="match-title">Einstein 2021 Semi Final</h5>
+							<span class="match-venue">Venue : Aiivon Hub, St James House, 167 Adetokumbo Ademola
+								Crescent</span>
+						</div>
+						<div class="part-team">
+							<div class="single-team">
+								<div class="logo">
+									<img src="assets/img/team-1.png" alt="">
+								</div>
+								<span class="team-name">Premier League</span>
+							</div>
+							<div class="match-details">
+								<div class="match-time">
+									<span class="date">Mon 24 July 2021</span>
+									<span class="times">09:00 am</span>
+								</div>
+								<span class="versase">vs</span>
+								<div class="buttons">
+									<a href="#" class="buy-ticket bet-btn bet-btn-dark-light">Predict Now</a>
+								</div>
+							</div>
+							<div class="single-team">
+								<div class="logo">
+									<img src="assets/img/team-2.png" alt="">
+								</div>
+								<span class="team-name">England International</span>
+							</div>
+						</div>
+						<span class="to-begin-time">
+							Starting on
+						</span>
+						<div class="count-area">
+							<div class="deal-counter">
+								<div class= "d-flex part-timer timer" data-date="30 April 2021 9:56:00 GMT+01:00">
+									<div class="single-time">
+										<span id="dayss" class="numbers day ml-4">01</span>
+										
+									</div>
+									<div class="single-time">
+										<span id="hourss" class="numbers hour ml-4">24</span>
+										
+									</div>
+									<div class="single-time">
+										<span id="minutes" class="numbers minute ml-4">48</span>
+										
+									</div>
+									<div class="single-time">
+										<span id="secs" class="numbers second ml-4">11</span>
+										
+									</div>
+								</div>
+								<div data-countdown="2021/06/30"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<div class="upcoming-match-list">
+						<div class="single-upcoming-match">
+							<div class="single-team">
+								<div class="part-logo">
+									<img src="assets/img/team-1.png" alt="">
+								</div>
+								<div class="part-text">
+									<span class="team-name">
+										Premier League
+									</span>
+								</div>
+							</div>
+							<span class="versase">vs</span>
+							<div class="single-team">
+								<div class="part-text">
+									<span class="team-name">
+										England International
+									</span>
+								</div>
+								<div class="part-logo">
+									<img src="assets/img/team-2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="single-upcoming-match">
+							<div class="single-team">
+								<div class="part-logo">
+									<img src="assets/img/team-3.png" alt="">
+								</div>
+								<div class="part-text">
+									<span class="team-name">
+										Premier League
+									</span>
+								</div>
+							</div>
+							<span class="versase">vs</span>
+							<div class="single-team">
+								<div class="part-text">
+									<span class="team-name">
+										England International
+									</span>
+								</div>
+								<div class="part-logo">
+									<img src="assets/img/team-4.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="single-upcoming-match">
+							<div class="single-team">
+								<div class="part-logo">
+									<img src="assets/img/team-5.png" alt="">
+								</div>
+								<div class="part-text">
+									<span class="team-name">
+										CG challenge
+									</span>
+								</div>
+							</div>
+							<span class="versase">vs</span>
+							<div class="single-team">
+								<div class="part-text">
+									<span class="team-name">
+										England International
+									</span>
+								</div>
+								<div class="part-logo">
+									<img src="assets/img/team-6.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="single-upcoming-match">
+							<div class="single-team">
+								<div class="part-logo">
+									<img src="assets/img/team-7.png" alt="">
+								</div>
+								<div class="part-text">
+									<span class="team-name">
+										Nigeria
+									</span>
+								</div>
+							</div>
+							<span class="versase">vs</span>
+							<div class="single-team">
+								<div class="part-text">
+									<span class="team-name">
+										India
+									</span>
+								</div>
+								<div class="part-logo">
+									<img src="assets/img/team-8.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		
+		</div>
+	</div>
+	<!-- upcoming match end -->
+
+	<!-----Prediction Tips--------->
+	
+
+
+
+	<!-- <div class="container "> -->
+	<!-- <div class="tips-header">
+			<h4>Featured Prediction Tips</h4>
+			<p>Check Out this upcoming Prediction tip. If you want to See more of our Prediction tips, view them all in our Prediction Tips Section.</p>
+		</div>
+		<div class="row tips-container">
+			<div class="tip-cont-1 col-xl-8 col-md-8 shadow-lg">
+				<div class="container-1-header">
+					<p class="tip-inside-header">
+						Tuesday Premier League All Teams To Score
+					</p>
+					<table class="table">
+					  <thead>
+						<tr>
+						
+						  <th scope="col">Match</th>
+						  <th scope="col">Predictions </th>
+						  <th scope="col">Odds</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+							<div class="Bg-colors">
+						  <td>Nigeria <span class="td-btn">vs</span> Germany</td>
+						  <td>BTTS</td>
+						  <td>
+						</div>
+  <div class="interior">
+    <a class="btn" href="#open-modal">2.10</a>
+  </div>
+</div>
+<div id="open-modal" class="modal-window">
+  <div>
+    <a href="#nav-2" title="Close" class="modal-close">Close</a>
+    <div class="modal-slip">
+		<div class="modal-slip-logo">
+			<img src="assets/img/white-BGs.png" style="width:50px;">
+			<button class="buy-slip">Join</button>
+		</div>
+	</div>
+    <div></div>
+    <div><small>=</small></div>
+    <a href="=" target="_blank"></div>
+    </div>
+</td>
+						</tr>
+						<tr>
+						
+						  <div class="row-one"></div>
+						  <td>Nigeria <span class="td-btn">vs</span> Germany</td>
+						  <td>BTTS</td>
+						  <td>
+						
+  <div class="interior">
+    <a class="btn" href="#open-modal">2.10</a>
+  </div>
+  </td>
+						</tr>
+						<tr>
+						
+						  <td>England <span class="td-btn">vs</span> Korea</td>
+						  <td>BTTS</td>
+						  <td>
+						</div>
+  <div class="interior">
+    <a class="btn" href="#open-modal">2.10</a>
+  </div>
+</div>
+<div id="open-modal" class="modal-window">
+  <div>
+    <a href="#nav-2" title="Close" class="modal-close">Close</a>
+    <h1>Voilà!</h1>
+    <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+    <div><small>Check out</small></div>
+    <a href="https://aminoeditor.com" target="_blank">👉 Amino: Live CSS Editor for Chrome</div>
+    </div>
+</td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			<div class="d-flex justify-content-center tip-cont-2 col-xl-4 col-md-4">
+				<div class="container-2-header">
+					<div class="tip-inside-header-2">
+						Kick off on Tuesday June  27th at 13:00
+					</div>
+					<div class="tip-box d-flex justify-content-center">
+						4.9
+					</div>
+					<button class="cont-2-btn">Back this prediction Bundle</button>
+					<img src="assets/img/white-BGs.png" style="width:100px; margin-top:18px;">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+---Prediction Tips------- -->
+	<!-- footer area start -->
+	<footer class="footer-area footer-bg">
+		<div class="overlay"></div>
+		<div class="footer-top">
+			<div class="container">
+				<div class="subscription-form-area">
+					<div class="row justify-content-center">
+						<div class="col-lg-10 ">
+							<!-- <div class="subscription-wrapper">
+								<div class="row">
+									<div class="col-lg-3">
+										<span class="subtitle">Subscribe</span>
+										<h4>For newsletter</h4>
+									</div>
+									<div class="col-lg-9">
+										<div class="subsscribe-form">
+											<form action="https://pixner.net/Sport/sport/index.html">
+													<div class="form-element-x">
+														<input type="email" placeholder="Enter your email address">
+														<div class="icon">
+															<img src="assets/img/rocket-launch-2.png" alt="">
+														</div>
+													</div>
+													<input type="submit" value="Subscribe Now">
+												
+											</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 order-lg-0 order-md-4 order-4">
+							<div class="widget-area about">
+								<div class="widget-title blank"></div>
+								<div class="widget-body">
+									<a href="index.html" class="footer-logo">
+										<img src="assets/img/white-BGs.png" alt="footer logo">
+									</a>
+									<p>Sport Einstein is the most advanced sports Predictions Site &amp; affialiate
+										platform and highest stakes across multiple bookmakers and exchanges.</p>
+									<div class="social-icons">
+										<ul>
+											<li>
+												<a href="#"><i class="fab fa-facebook-f"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-twitter"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-linkedin-in"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-google-plus-g"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-6">
+							<div class="widget-area about">
+								<div class="widget-title">
+									<h4>Navigation Links</h4>
+								</div>
+								<div class="widget-body">
+									<ul class="footer-menu">
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i> Latest News</a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i> Upcoming News</a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i> Live Updates</a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i>Predictions</a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i>Blog</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-area">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-6">
+							Copyright © Sport Einstein 2021.All right reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<!-- footer area end -->
+
+	<!-- back to top start -->
+	<div class="back-to-top">
+		<div class="icon">
+			<img src="assets/img/rocket-launch.png" alt="">
+		</div>
+	</div>
+	<!-- back to top end -->
+
+	<!-- preloader start -->
+	<div id="preloader">
+		<div class="spinner"></div>
+	</div>
+	<!-- preloader end -->
+	<script src="assets/js/jquery-2.1.1.min.js"></script>
+	<!-- propper -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- bootstrap 4-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<!-- counterup -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!-- Count down js -->
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<!-- Water bg -->
+	<script src="assets/js/jquery.ripples-min.js"></script>
+	<!-- Particles bg -->
+	<script src="assets/js/particles.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<!-- YT player -->
+	<script src="assets/js/YTPlayer.min.js"></script>
+	<!-- magnific-popup -->
+	<script src="assets/js/magnific-popup.js"></script>
+	<!-- owl-carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- venobox js -->
+	<script src="assets/js/venobox.min.js"></script>
+	<!-- main-js -->
+	<script src="assets/js/main.js"></script>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+</body>
+
+<!-- Mirrored from pixner.net/Sport/sport/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Jun 2021 03:15:03 GMT -->
+
+</html> 	 	

@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from pixner.net/Sport/sport/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Jun 2021 03:14:44 GMT -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- load favicon  -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- bootstrap 4 css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="league.css">
+	<!-- fontawesome  5 css -->
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<!-- flaticon -->
+	<link rel="stylesheet" href="assets/webfonts/flaticon.css">
+	<!-- magnific-popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- YT player -->
+	<link rel="stylesheet" href="assets/css/YTPlayer.min.css">
+	<!-- owl-carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- venobox css -->
+	<link rel="stylesheet" href="assets/css/venobox.css">
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="league.css">
+	<link rel="stylesheet" href="assets/css/prediction.css">
+
+	<title>Sport Einstein | Sports Prediction Aggregation</title>
+</head>
+
+<body>
+
+
+	<!-- Navebar Area start -->
+	<div class="navigation">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 p-0">
+					<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+						<a class="navbar-brand" href="index2.html">
+							<img src="assets/img/white-BGs.png" alt="">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+							aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="mainmenu">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item active">
+									<a class="nav-link" href="#about">Predictions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">VetBet</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="#">Blog</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Navebar Area End -->
+
+	<!-- Navebar Area start -->
+	<div id="navs">
+		<div class="navigation">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 p-0">
+						<nav class="navbar navbar-expand-lg  bg-dark navbar-light">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenus"
+								aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fa fa-caret-down">Updates</i></span>
+							</button>
+							<div class="collapse navbar-collapse" id="mainmenus">
+								<ul class="navbar-nav ">
+									<li class="nav-item active">
+										<a class="nav-link" href="#about">Latest News</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#betradar">Upcoming Matches</a>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="#features">Live Matches</a>
+									</li>
+								</ul>
+
+								<select name="ap" class="form-select" aria-label="Default select example">
+									<option class=" p-3 m-4" selected>Select a League / Date to view Predictions
+									</option>
+									<optgroup label="International">
+
+
+										<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+										<script>
+											const $select = $('select[name="ap"]');
+											const opts = [
+												{ 'value': href = 'prediction.html', 'text': 'Champions League' },
+												{ 'value': href = 'prediction.html', 'text': 'Europa League' },
+												{ 'value': href = 'prediction.html', 'text': 'UEFA  Super Cup' },
+												{ 'value': href = 'prediction.html', 'text': 'Confederaton Cups' },
+												{ 'value': href = 'prediction.html', 'text': 'Copa America' },
+												{ 'value': href = 'prediction.html', 'text': 'Euro 2020 Finals' },
+												{ 'value': href = 'prediction.html', 'text': 'Euro 2020 Qualifying' },
+												{ 'value': href = 'prediction.html', 'text': 'International Friendly' },
+												{ 'value': href = 'prediction.html', 'text': 'Google FR' },
+												{ 'value': href = 'prediction.html', 'text': 'Google FR' },
+												{ 'value': href = 'prediction.html', 'text': 'Google FR' },
+												{ 'value': href = 'prediction.html', 'text': 'Google FR' },
+												{ 'value': href = 'prediction.html', 'text': 'Google FR' },
+												{ 'value': href = 'prediction.html', 'text': 'Google FR' },
+												{ 'value': href = 'prediction.html', 'text': 'Google FR' },
+												{ 'value': href = 'prediction.html', 'text': 'Google FR' },
+											];
+
+											opts.forEach(function (obj) {
+												$("<option />", {
+													value: obj.value,
+													text: obj.text
+												}).appendTo($select)
+											});
+
+											$select.on("change", function () {
+												window.location = this.value;
+											});
+										</script>
+									</optgroup>
+
+								</select>
+
+							</div>
+
+						</nav>
+						<div class="breadcrumb-area ">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<!-- <h2 class="title">
+								Login Premium Account
+							</h2> -->
+										<ul class="links">
+											<li>
+												<a href="index2.html">
+													<i class="fas fa-home"></i>
+													Home
+												</a>
+											</li>
+											<li>
+												<a class="active" href="prediction.html">
+													Over/under 2.5
+												</a>
+											</li>
+											<li>
+												<a href="index2.html">
+													<i class="fas fa-clock"></i>
+													Today- July 17, 2021
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- Breadcrumb Area Start  -->
+
+		</div>
+	</div>
+	
+	</nav>
+	<div class="all-body container">
+		<div class="headers shadow-lg">
+		<h4>Sport Einstein Predictions for Today</h4>
+		<p>Sport Einstein Brings you the best predictions and partners with the best predictions sites in the country</p>
+	</div>
+			<div class="row ml-5">
+				<div class="League ml-1 col-md-12">
+					English Premeir League
+				</div>
+				<div class="Teams col-md-12">
+					Liverpool - SouthHampton
+				</div>
+				<div class="match-date col-md-12">
+					2021-05-08
+				</div>
+				<div class="stadium col-md-12">
+					Anfield
+				</div>
+				<div class="live-fixtures">
+					<img src="assets/team-ava3.png">
+					<span class="p-2">Liverpool</span>
+					<span class="p-1"  style="font-weight: bold;">4</span>
+					<span class="p-1">vs</span>
+					<span class="p-1" style="font-weight: bold;">2</span>
+					<img src="assets/team-ava3.png">
+					<span class=>SouthHampton</span>
+				</div>
+				</div>
+			</div>	
+		</div>
+	<div class="container">
+			
+				
+				<div class="row">
+					<div class="col-xl-4 col-md-4 col-sm-">
+						<div class="list-group tab" id="list-tab" role="tablist">
+
+							<a class="list-group-item list-group-item-action" id="list-home-list"
+								data-toggle="list" href="#Win-Draw-Win" role="tab" aria-controls="home">
+								WinDrawWin
+							</a>
+							<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+								href="#btts" role="tab" aria-controls="profile">
+								BTTS
+							</a>
+							<a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="list"
+								href="#over-under" role="tab" aria-controls="profile">
+								Over/Under 2.5
+							</a>
+							<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+								href="#oddseven" role="tab" aria-controls="profile">
+								Odds/Even
+							</a>
+							<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+								href="#correctScore" role="tab" aria-controls="profile">
+								Correct Score
+							</a>
+						</div>
+					</div>
+					<div class="col-8">
+						<div class="tab-content2 tab-content" id="nav-tabContent">
+							<div class="tab-pane fade " id="Win-Draw-Win" role="tabpanel"
+								aria-labelledby="list-home-list">
+								<div class="row">
+									<div class="tab-pane-content">
+										<!-- <span class="bg-success text-white">Probability-High Chance</span>
+									<span class="bg-danger text-white">Probability-Low Chance</span> -->
+									<table class="table">
+										<div class="row d-flex justify-content-evenly probs">
+										<p>Probability H/C</p>
+										<P>Probability L/C</P>
+										</div>
+									</div>
+									  <thead>
+									
+									  </thead>
+									  <tbody>
+										<tr>
+										  <th scope="row"><a href="https://www.predictz.com/"> Predictz<i
+											class="fas fa-external-link-alt"></i></a></th>
+										  <td>Home Win</td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  
+										</tr>
+										<tr>
+										  <th scope="row"><a href="">WinDrawWin<i
+											class="fas fa-external-link-alt"></i></a></th>
+										  <td>Home Win</td>
+										  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										  
+										</tr>
+
+										<tr>
+											<th scope="row"><a href="">Forbets <i
+												class="fas fa-external-link-alt"></i></a></th>
+											<td>Home Win</td>
+											<td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">78.0% surity</small></i></td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">22.0% </small></i></td>
+										  </tr>
+
+										  <tr>
+											<th scope="row"><a href="">SoccerVista <i
+												class="fas fa-external-link-alt"></i></th>
+											<td>Home Win</td>
+											<td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">83.0% surity</small></i></td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">17.0% </small></i></td>
+										  </tr>
+
+										  <tr>
+											<th scope="row"><a href="#">Whoscored <i
+												class="fas fa-external-link-alt"></i></a></th>
+											<td>Home Win</td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">44.0% </small></i></td>
+											<td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">56.0% surity</small></i></td>
+										  </tr>
+										
+									  </tbody>
+									</table>
+
+
+										
+									</div>
+									
+								</div>
+							</div>
+
+							
+
+							<div class="tab-pane fade " id="btts" role="tabpanel"
+								aria-labelledby="list-profile-list">
+								<div class="row">
+									<table class="table">
+										<div class="row d-flex justify-content-evenly probs">
+											<p>Probability H/C</p>
+											<P>Probability L/C</P>
+											</div>
+										<thead>
+										 
+										</thead>
+										<tbody>
+										  <tr>
+											<th scope="row"><a href="https://www.predictz.com/"> Predictz<i
+											  class="fas fa-external-link-alt"></i></a></th>
+											<td>Mark</td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										  </tr>
+										  <tr>
+											<th scope="row"><a href="">WinDrawWin<i
+											  class="fas fa-external-link-alt"></i></a></th>
+											<td>Jacob</td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										  </tr>
+  
+										  <tr>
+											  <th scope="row"><a href="">Forbets <i
+												  class="fas fa-external-link-alt"></i></a></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+  
+											<tr>
+											  <th scope="row"><a href="">SoccerVista <i
+												  class="fas fa-external-link-alt"></i></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+  
+											<tr>
+											  <th scope="row"><a href="#">Whoscored <i
+												  class="fas fa-external-link-alt"></i></a></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+										  
+										</tbody>
+									  </table>
+							
+								</div>
+							</div>
+
+							
+							<div class="tab-pane fade show active" id="over-under" role="tabpanel"
+								aria-labelledby="list-profile-list">
+								<div class="row">
+									<table class="table">
+										<div class="row d-flex justify-content-evenly probs">
+											<p>Probability H/C</p>
+											<P>Probability L/C</P>
+											</div>
+										<thead>
+										 
+										</thead>
+										<tbody>
+										  <tr>
+											<th scope="row"><a href="https://www.predictz.com/"> Predictz<i
+											  class="fas fa-external-link-alt"></i></a></th>
+											<td>Mark</td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										  </tr>
+										  <tr>
+											<th scope="row"><a href="">WinDrawWin<i
+											  class="fas fa-external-link-alt"></i></a></th>
+											<td>Jacob</td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										  </tr>
+  
+										  <tr>
+											  <th scope="row"><a href="">Forbets <i
+												  class="fas fa-external-link-alt"></i></a></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+  
+											<tr>
+											  <th scope="row"><a href="">SoccerVista <i
+												  class="fas fa-external-link-alt"></i></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+  
+											<tr>
+											  <th scope="row"><a href="#">Whoscored <i
+												  class="fas fa-external-link-alt"></i></a></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+										  
+										</tbody>
+									  </table>
+							
+								</div>
+							</div>
+
+
+							<div class="tab-pane fade" id="oddseven" role="tabpanel"
+								aria-labelledby="list-profile-list">
+								<div class="row">
+									<table class="table">
+										<div class="row d-flex justify-content-evenly probs">
+											<p>Probability H/C</p>
+											<P>Probability L/C</P>
+											</div>
+										<thead>
+										 
+										</thead>
+										<tbody>
+										  <tr>
+											<th scope="row"><a href="https://www.predictz.com/"> Predictz<i
+											  class="fas fa-external-link-alt"></i></a></th>
+											<td>Mark</td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										  </tr>
+										  <tr>
+											<th scope="row"><a href="">WinDrawWin<i
+											  class="fas fa-external-link-alt"></i></a></th>
+											<td>Jacob</td>
+											<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										  </tr>
+  
+										  <tr>
+											  <th scope="row"><a href="">Forbets <i
+												  class="fas fa-external-link-alt"></i></a></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+  
+											<tr>
+											  <th scope="row"><a href="">SoccerVista <i
+												  class="fas fa-external-link-alt"></i></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+  
+											<tr>
+											  <th scope="row"><a href="#">Whoscored <i
+												  class="fas fa-external-link-alt"></i></a></th>
+											  <td>Jacob</td>
+											  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+										  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+											</tr>
+										  
+										</tbody>
+									  </table>
+							
+								</div>
+							</div>
+
+
+							<div class="tab-pane fade" id="correctScore" role="tabpanel"
+							aria-labelledby="list-profile-list">
+							<div class="row">
+								<table class="table">
+									<div class="row d-flex justify-content-evenly probs">
+										<p>Probability H/C</p>
+										<P>Probability L/C</P>
+										</div>
+									<thead>
+									 
+									</thead>
+									<tbody>
+									  <tr>
+										<th scope="row"><a href="https://www.predictz.com/"> Predictz<i
+										  class="fas fa-external-link-alt"></i></a></th>
+										<td>Mark</td>
+										<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+									  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+									  </tr>
+									  <tr>
+										<th scope="row"><a href="">WinDrawWin<i
+										  class="fas fa-external-link-alt"></i></a></th>
+										<td>Jacob</td>
+										<td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+									  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+									  </tr>
+
+									  <tr>
+										  <th scope="row"><a href="">Forbets <i
+											  class="fas fa-external-link-alt"></i></a></th>
+										  <td>Jacob</td>
+										  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+									  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										</tr>
+
+										<tr>
+										  <th scope="row"><a href="">SoccerVista <i
+											  class="fas fa-external-link-alt"></i></th>
+										  <td>Jacob</td>
+										  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+									  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										</tr>
+
+										<tr>
+										  <th scope="row"><a href="#">Whoscored <i
+											  class="fas fa-external-link-alt"></i></a></th>
+										  <td>Jacob</td>
+										  <td><i style="color:red;"class="fa fa-times-circle" aria-hidden="true"><small class="text-dark">12.0% </small></i></td>
+									  <td><i class="fa fa-check-circle" aria-hidden="true"><small class="text-dark">88.0% surity</small></i></td>
+										</tr>
+									  
+									</tbody>
+								  </table>
+						
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Navebar Area End -->
+	<div class="league-banner">
+		<div class="ad-banner">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!--Carousel Indicators-->
+				<!-- <ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+				</ol> -->
+				<!--Carousel Items-->
+				<div class="carousel-inner">
+					<!--tips: add data-interval="" to a .carousel-item to change the amount of time to delay before the next item.(Default: 5000)-->
+					<div class="carousel-item active">
+						<img src="assets/img/white-BGs.png"  alt="...">
+						
+					</div>
+					<div class="carousel-item">
+						<img src="assets/img/blog-2.jpg" alt="...">
+						
+					</div>
+				</div>
+				<!--Carousel Controls-->
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-0">
+				<!-- Trigger/Open The Modal -->
+				<button id="myBtn" class="modal-trigger no-select">Bet Slip</button>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+					<!-- Modal content -->
+					<div id="modal-content" class="modal-content text-white">
+						<span id="modalClose" class="close no-select">&times;</span>
+						<p class="text-white">
+							Bet Slip Goes here
+						</p>
+					</div>
+				</div>
+				<script>
+
+					$(document).ready(function () {
+						$('#myBtn').click(function (event) {
+							showModal();
+							event.stopPropagation();
+						});
+						$('#modalClose').click(function () {
+							hideModal();
+						});
+
+						// Do nothing when clicking on the modal content
+						$('.modal-content').click(function (event) {
+							event.stopPropagation();
+						});
+					});
+
+					function showModal() {
+						$('#myModal').fadeIn('slow');
+						(function fun() {
+							$('.modal-content').css({ 'transform': 'translateX(-10px)' });
+						})();
+					}
+
+					function hideModal() {
+						$('#myModal').fadeOut('fast');
+						(function fun2() {
+							$('.modal-content').css({ 'transform': 'translateX(0px)' });
+						})();
+					}
+
+
+
+					$(document).on("click", function () {
+						//click outside of ".nav__dropdown" class itself and menu will be hidden
+						hideModal();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+	<!-- Hero Area Start -->
+<!-------------Prediction-matches----------------->
+	<div id="main-leagues" class="container shadow-lg">
+		<div class="league-header">
+			<h3>Featured Predictions For Today</h3>
+			<p class="text-muted" style="font-size:12px;">Sport Einstein delivers the most legit prediction on football matches. Signup For more contente</p>
+		</div>
+		<div class="league-main-1">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#">Copa Chile</a>
+				</div>
+				<div class="col-md-12">
+					<a href ="#" class="match-club d-flex justify-content-center">
+						Nigeria vs germany
+					</a>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="match-content">
+							<span class="title">Time</span>
+							<span class="content">23:22</span>
+							
+							<span class="title">1</span>
+							<span class="content">40% <i class="fab fa-arrow-up"></i></span>
+
+							<span class="title">X</span>
+							<span class="content">15%</span>
+
+							<span class="title">2</span>
+							<span class="content">20%</span>
+
+							<span class="title">1X2</span>
+							<span class="content">X</span>
+
+							<span class="title">U/O</span>
+							<span class="content">U</span>
+
+							<span class="title">BTTS</span>
+							<span class="content">Yes</span>
+
+							<span class="title">Score</span>
+							<span class="content">4-2</span>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="league-main-1">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#">Copa Chile</a>
+				</div>
+				<div class="col-md-12">
+					<a href ="#" class="match-club d-flex justify-content-center">
+						Nigeria vs germany
+					</a>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="match-content">
+							<span class="title">Time</span>
+							<span class="content">23:22</span>
+							
+							<span class="title">1</span>
+							<span class="content">40%</span>
+
+							<span class="title">X</span>
+							<span class="content">15%</span>
+
+							<span class="title">2</span>
+							<span class="content">20%</span>
+
+							<span class="title">1X2</span>
+							<span class="content">X</span>
+
+							<span class="title">U/O</span>
+							<span class="content">U</span>
+
+							<span class="title">BTTS</span>
+							<span class="content">Yes</span>
+
+							<span class="title">Score</span>
+							<span class="content">4-2</span>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="league-main-1">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#">Copa Chile</a>
+				</div>
+				<div class="col-md-12">
+					<a href ="#" class="match-club d-flex justify-content-center">
+						Nigeria vs germany
+					</a>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="match-content">
+							<span class="title">Time</span>
+							<span class="content">23:22</span>
+							
+							<span class="title">1</span>
+							<span class="content">40%</span>
+
+							<span class="title">X</span>
+							<span class="content">15%</span>
+
+							<span class="title">2</span>
+							<span class="content">20%</span>
+
+							<span class="title">1X2</span>
+							<span class="content">X</span>
+
+							<span class="title">U/O</span>
+							<span class="content">U</span>
+
+							<span class="title">BTTS</span>
+							<span class="content">Yes</span>
+
+							<span class="title">Score</span>
+							<span class="content">4-2</span>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="league-main-1">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#">Copa Chile</a>
+				</div>
+				<div class="col-md-12">
+					<a href ="#" class="match-club d-flex justify-content-center">
+						Nigeria vs germany
+					</a>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="match-content">
+							<span class="title">Time</span>
+							<span class="content">23:22</span>
+							
+							<span class="title">1</span>
+							<span class="content">40%</span>
+
+							<span class="title">X</span>
+							<span class="content">15%</span>
+
+							<span class="title">2</span>
+							<span class="content">20%</span>
+
+							<span class="title">1X2</span>
+							<span class="content">X</span>
+
+							<span class="title">U/O</span>
+							<span class="content">U</span>
+
+							<span class="title">BTTS</span>
+							<span class="content">Yes</span>
+
+							<span class="title">Score</span>
+							<span class="content">4-2</span>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="league-main-1">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#">Copa Chile</a>
+				</div>
+				<div class="col-md-12">
+					<a href ="#" class="match-club d-flex justify-content-center">
+						Nigeria vs germany
+					</a>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="match-content">
+							<span class="title">Time</span>
+							<span class="content">23:22</span>
+							
+							<span class="title">1</span>
+							<span class="content">40%</span>
+
+							<span class="title">X</span>
+							<span class="content">15%</span>
+
+							<span class="title">2</span>
+							<span class="content">20%</span>
+
+							<span class="title">1X2</span>
+							<span class="content">X</span>
+
+							<span class="title">U/O</span>
+							<span class="content">U</span>
+
+							<span class="title">BTTS</span>
+							<span class="content">Yes</span>
+
+							<span class="title">Score</span>
+							<span class="content">4-2</span>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="league-main-1">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#">Copa Chile</a>
+				</div>
+				<div class="col-md-12">
+					<a href ="#" class="match-club d-flex justify-content-center">
+						Nigeria vs germany
+					</a>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="match-content">
+							<span class="title">Time</span>
+							<span class="content">23:22</span>
+							
+							<span class="title">1</span>
+							<span class="content">40%</span>
+
+							<span class="title">X</span>
+							<span class="content">15%</span>
+
+							<span class="title">2</span>
+							<span class="content">20%</span>
+
+							<span class="title">1X2</span>
+							<span class="content">X</span>
+
+							<span class="title">U/O</span>
+							<span class="content">U</span>
+
+							<span class="title">BTTS</span>
+							<span class="content">Yes</span>
+
+							<span class="title">Score</span>
+							<span class="content">4-2</span>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="league-main-1">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#">Copa Chile</a>
+				</div>
+				<div class="col-md-12">
+					<a href ="#" class="match-club d-flex justify-content-center">
+						Nigeria vs germany
+					</a>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="match-content">
+							<span class="title">Time</span>
+							<span class="content">23:22</span>
+							
+							<span class="title">1</span>
+							<span class="content">40%</span>
+
+							<span class="title">X</span>
+							<span class="content">15%</span>
+
+							<span class="title">2</span>
+							<span class="content">20%</span>
+
+							<span class="title">1X2</span>
+							<span class="content">X</span>
+
+							<span class="title">U/O</span>
+							<span class="content">U</span>
+
+							<span class="title">BTTS</span>
+							<span class="content">Yes</span>
+
+							<span class="title">Score</span>
+							<span class="content">4-2</span>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- Navebar Area End -->
+	<div class="league-banner">
+		<div class="ad-banner">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!--Carousel Indicators-->
+				<!-- <ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+				</ol> -->
+				<!--Carousel Items-->
+				<div class="carousel-inner">
+					<!--tips: add data-interval="" to a .carousel-item to change the amount of time to delay before the next item.(Default: 5000)-->
+					<div class="carousel-item active">
+						<img src="assets/img/white-BGs.png"  alt="...">
+						
+					</div>
+					<div class="carousel-item">
+						<img src="assets/img/blog-2.jpg" alt="...">
+						
+					</div>
+				</div>
+				<!--Carousel Controls-->
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+		
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="league-main-1">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#">Copa Chile</a>
+			</div>
+			<div class="col-md-12">
+				<a href ="#" class="match-club d-flex justify-content-center">
+					Nigeria vs germany
+				</a>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="match-content">
+						<span class="title">Time</span>
+						<span class="content">23:22</span>
+						
+						<span class="title">1</span>
+						<span class="content">40%</span>
+
+						<span class="title">X</span>
+						<span class="content">15%</span>
+
+						<span class="title">2</span>
+						<span class="content">20%</span>
+
+						<span class="title">1X2</span>
+						<span class="content">X</span>
+
+						<span class="title">U/O</span>
+						<span class="content">U</span>
+
+						<span class="title">BTTS</span>
+						<span class="content">Yes</span>
+
+						<span class="title">Score</span>
+						<span class="content">4-2</span>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-------------Prediction-matches----------------->
+
+	<!-- footer area start -->
+	<footer class="footer-area footer-bg">
+		<div class="overlay"></div>
+		<div class="footer-top">
+			<div class="container">
+				<div class="subscription-form-area">
+					<div class="row justify-content-center">
+						<div class="col-lg-10 ">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 order-lg-0 order-md-4 order-4">
+							<div class="widget-area about">
+								<div class="widget-title blank"></div>
+								<div class="widget-body">
+									<a href="index.html" class="footer-logo">
+										<img src="assets/img/white-BGs.png" alt="footer logo">
+									</a>
+									<p>Sport Einstein is the most advanced sports Predictions Site &amp; affialiate
+										platform and highest stakes across multiple bookmakers and exchanges.</p>
+									<div class="social-icons">
+										<ul>
+											<li>
+												<a href="#"><i class="fab fa-facebook-f"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-twitter"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-linkedin-in"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-google-plus-g"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-6">
+							<div class="widget-area about">
+								<div class="widget-title">
+									<h4>Navigation Links</h4>
+								</div>
+								<div class="widget-body">
+									<ul class="footer-menu">
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i> Latest News</a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i> Upcoming News</a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i> Live Updates</a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i>Predictions</a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-angle-double-right"></i>Blog</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-area">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-6">
+							Copyright © Sport Einstein 2021.All right reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<!-- footer area end -->
+
+	<!-- back to top start -->
+	<div class="back-to-top">
+		<div class="icon">
+			<img src="assets/img/rocket-launch.png" alt="">
+		</div>
+	</div>
+	<!-- back to top end -->
+
+	<!-- preloader start -->
+	<div id="preloader">
+		<div class="spinner"></div>
+	</div>
+	<!-- preloader end -->
+	<script src="assets/js/jquery-2.1.1.min.js"></script>
+	<!-- propper -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- bootstrap 4-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<!-- counterup -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!-- Count down js -->
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<!-- Water bg -->
+	<script src="assets/js/jquery.ripples-min.js"></script>
+	<!-- Particles bg -->
+	<script src="assets/js/particles.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<!-- YT player -->
+	<script src="assets/js/YTPlayer.min.js"></script>
+	<!-- magnific-popup -->
+	<script src="assets/js/magnific-popup.js"></script>
+	<!-- owl-carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- venobox js -->
+	<script src="assets/js/venobox.min.js"></script>
+	<!-- main-js -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+<!-- Mirrored from pixner.net/Sport/sport/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Jun 2021 03:15:03 GMT -->
+
+</html>
