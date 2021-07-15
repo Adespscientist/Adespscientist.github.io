@@ -1,0 +1,185 @@
+@media screen and (max-width: 540px) {
+    .predictions-tips h4{
+     font-size:15px;
+     text-transform: uppercase;
+    }
+    .predictions-tips p{
+        font-size:13px;
+        text-transform: uppercase;
+       }
+
+       .tab-content .list-group{
+           background:green;
+           width:100%;
+       }
+
+       .tab-content2{
+           width:100%;
+           position:relative;
+           margin-left:50px;
+       }
+  }
+  .fa{
+      color:rgb(2, 181, 2);
+  }
+  table{
+      border:1px dotted #008080;
+  }
+ .high-c{
+     background:rgb(2, 189, 2);
+     width:200px;
+     color:#fff;
+     border-radius: 10px;
+ }
+.high-c p{
+    font-size: 10px;
+    top:30px;
+    color:#fff;
+     
+ }
+ .probs p{
+     padding:10px;
+     margin-left:20px;
+ }
+ .probs p:first-child{
+     background:rgb(5, 181, 5);
+     width:180px;
+     text-align: center;
+     color:#fff;
+     border-radius: 6px;
+     
+ }
+ .probs p:last-child{
+    background:red;
+    width:180px;
+    text-align: center;
+    color:#fff;
+    border-radius: 6px;
+    
+ }
+ .score-tab p{
+     text-align: center;
+     
+     font-size:50px;
+     color:#fff;
+    word-spacing: 10px;
+ }
+
+ .teamA{
+     display:inline flex;
+ }
+
+ .table-borderless{
+     border:none;
+     outline:none;
+     background:red;
+ }
+ table img{
+     width:50px;
+ }
+ .live-fixtures{
+   background:rgb(39, 38, 38);  
+   height:60px;
+   color:#fff;
+   padding:15px;
+   border-radius: 5px;
+ }
+ .League{
+     padding:10px;
+ }
+ .headers{
+     text-align: center;
+     padding:10px;
+ }
+ 
+ .wrapper {
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+	padding:5px;
+  	height:50px;
+}
+
+.list {
+    position:absolute;
+    left:0px;
+    top:0px;
+  	min-width:3000px;
+  	margin-left:12px;
+    margin-top:0px;
+}
+
+.list li{
+	display:table-cell;
+    position:relative;
+    text-align:center;
+    cursor:grab;
+    cursor:-webkit-grab;
+    color:#efefef;
+    vertical-align:middle;
+}
+
+.scroller {
+  text-align:center;
+  cursor:pointer;
+  display:none;
+  padding:7px;
+  padding-top:11px;
+  white-space:no-wrap;
+  vertical-align:middle;
+  background-color:#fff;
+}
+
+.scroller-right{
+  float:right;
+}
+
+.scroller-left {
+  float:left;
+}
+
+.wrapper .nav-tabs{
+  color:#000  !important;
+    height:400px;
+}
+
+li{
+    border-right:1px solid rgb(199, 199, 199);
+    margin-right:10px;
+    color:#000;
+    font-size:10px;
+}
+
+.tabs__toggle .overlay {
+    position: absolute;
+    content: "bfkm";
+    color:#fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 22, 22);
+    opacity: 1;
+}
+.tabs__toggle .overlay .fa{
+    color:red;
+    position:relative;
+    margin-top:10px
+}
+.tabs__toggle .overlay::after {
+    position: absolute;
+    content: "Login to view";
+    color:rgb(255, 0, 0);
+    top: 0;
+    font-size:10px;
+    margin-top:30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 22, 22);
+    opacity: 1;
+}
+
+.fa{
+    color:rgb(0, 230, 38);
+}

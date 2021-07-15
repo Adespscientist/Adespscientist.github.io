@@ -1,0 +1,163 @@
+
+h1,h2,h3,h4,h5,h6,p,div,.tabs{
+    color:rgb(0, 0, 0);
+
+}
+.sport-tips-btn{
+    margin:0;
+    padding:0;
+}
+
+.navs {
+   width:70%;
+   position: relative;
+   display:inline-flex;
+   justify-content: center;
+   margin:0;
+   padding-top:20px;
+   left:200px;
+}
+.navs .nav-item:hover{
+    background:#008080;
+    outline:none;
+    color:rgb(0, 0, 0);
+    border:none;
+}
+.navs .nav-item a{
+    font-size: 14px;
+    padding:20px;
+    color:rgb(0, 0, 0);
+}
+
+.navs .nav-item a:hover{
+    color:#000;
+    
+}
+
+.navs .nav-item:focus{
+    color:#000; 
+    background:red;
+    display:none;
+    
+}
+
+.breadcrumb-area{
+    background-color: #008080;
+}
+
+.tips-container{
+   width:100%;
+}
+
+.list-group-item:active{
+    background:#08bbbb !important;
+}
+.list-group .list-group-item{
+border:none;
+outline:none;
+padding:10px;
+}
+.tab-content h3{
+  
+    padding:px;
+    color:#000;
+    font-size:14px;
+}
+
+.tab-content .tab-pane{
+   
+    padding:10px;
+}
+.tab-content .tab-pane-content .col-md-8{
+    padding:10px;
+   
+    color:red;
+
+    margin-bottom:8px
+}
+
+.tab-content .score-tab{
+    width:60%;
+    height:90px;
+    top:0;
+    background:rgb(46, 46, 46);
+    position: relative;
+    color:#fff;
+    margin-top:-60px;
+    margin-bottom:40px;
+    border:4px solid rgb(10, 128, 126);
+
+}
+
+.tab-content .score-tab span{
+    padding:20px;
+    font-weight:bold;
+    letter-spacing: 15px;
+    font-size:30px;
+    left:7px;
+    position: relative;
+}
+
+.tab-pane .probs{
+    margin-left:30px;
+    padding:2px;
+}.tab-content .tip-header p{
+    font-size:18px;
+    font-weight: 200;
+}
+.tab-content .team-tips span{
+    font-weight: bold;
+}
+.tab-pane .tip-sites{
+font-size:12px;
+position:relative;
+height:300px;
+margin:40px;
+
+}
+.tab-pane  span{
+   font-size:14px;
+}
+#main-leagues{
+    background:rgb(255, 255, 255);
+    border-top:1px solid rgb(179, 175, 175);
+    border-bottom:1px solid rgb(182, 174, 174);
+}
+#main-leagues .match-club{
+    background:#008080;
+}
+#main-leagues .league-main-1 .match-club{
+    color:#fff;
+    font-weight:bold;
+    background:#333333;
+    transition: all;
+   transition-duration: .5s;
+   padding:5px;
+}
+
+#main-leagues .league-main-1 .match-club:hover{
+    background:#069292;
+
+}
+.match-content{
+    width:100%;
+    padding:10px;
+    margin-left:20px;
+}
+.match-content span{
+    padding-right:35px;
+    border-right:1px solid rgb(226, 216, 216);
+}
+.match-content .content{
+  
+    padding:10px;
+    font-size:13px;
+}
+.match-content .title{
+    font-size:13px;
+    color:#0e3030;
+    display:inline-flex;
+    align-items: center;
+    margin:5px;
+    font-weight:bold;
+}
