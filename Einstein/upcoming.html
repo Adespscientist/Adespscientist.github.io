@@ -9,26 +9,27 @@
 	<!-- load favicon  -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- bootstrap 4 css -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="league.css">
 	<!-- fontawesome  5 css -->
-	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
 	<!-- flaticon -->
-	<link rel="stylesheet" href="assets/webfonts/flaticon.css">
+	<link rel="stylesheet" href="/assets/webfonts/flaticon.css">
 	<!-- magnific-popup -->
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="/assets/css/magnific-popup.css">
 	<!-- YT player -->
-	<link rel="stylesheet" href="assets/css/YTPlayer.min.css">
+	<link rel="stylesheet" href="/assets/css/YTPlayer.min.css">
 	<!-- owl-carousel -->
-	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="/assets/css/owl.carousel.css">
 	<!-- venobox css -->
-	<link rel="stylesheet" href="assets/css/venobox.css">
+	<link rel="stylesheet" href="/assets/css/venobox.css">
 	<!-- style -->
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
 	<!-- responsive -->
-	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="/assets/css/responsive.css">
 	<link rel="stylesheet" href="league.css">
-	<link rel="stylesheet" href="assets\css\upcoming.css">
+	<link rel="stylesheet" href="/assets\css\upcoming.css">
+
 
 	<title>Sport Einstein | Sports Prediction Aggregation</title>
 </head>
@@ -104,189 +105,575 @@
 		<!-- Navebar Area start -->
 		<div class="container">
 			<nav class="navbar">
-				<a href="index2.html"><img src="assets/img/white-BGs.png"></a>
-				<ul class="ml-auto">
-					<li class="nav-list">
-						<a href="#" class="nav-link1">Vetbet</a>
-					</li>
-				</ul>
+			
 			</nav>
-
-			<nav class="navbar">
-				<ul class="">
-					<li class="nav-item active nav-0">
-						<a class="nav-link" href="#about">Latest News</a>
-					</li>
-					<li class="nav-item nav-0">
-						<a class="nav-link" href="upcoming.html">Upcoming Matches</a>
-					</li>
-
-					<li class="nav-item rec nav-0">
-						<a class="nav-link" href="#features">  <span class="pulse"></span>Live Matches</a>
-						 
-					</li>
-
-					
-				</ul>
-			</nav>
+			<div class="nav">
+				<input type="checkbox" id="nav-check">
+				<div class="nav-header">
+				  <div class="nav-title ">
+					<a href="#">Lastest News</a>
+				  </div>
+				</div>
+				<div class="nav-btn">
+				  <label for="nav-check">
+					<span></span>
+					<span></span>
+					<span></span>
+				  </label>
+				</div>
+				
+				<div class="nav-links">
+				  <a class="rec" href="/upcoming.html" target="_blank">Upcoming Matches</a>
+			
+			
+				  <a href="#" target="_blank"><span class="pulse"></span>Live Matches</a>
+				  <a href="#" target="_blank">Vetbet</a>
+				</div>
+			  </div>
 		</div>
 		</div>
 		
 		<!-- Navebar Area End -->
-		<div class="tabs-wrapper">
-
-			<input type="radio" name="tab" id="tab1" class="tab-head1" checked="checked"/>
-			<label for="tab1"><img src="/download.png">Premier League</label>
-			<input type="radio" name="tab" id="tab2" class="tab-head2" />
-			<label for="tab2"><img src="/laliga.png">Laliga</label>
-			<input type="radio" name="tab" id="tab3" class="tab-head3" />
-			<label for="tab3"><img src="/bundesliga.png">Bundlesga</label>
-			<input type="radio" name="tab" id="tab4" class="tab-head4" />
-			<label for="tab4"><img src="/serie-a.png">Serie A</label>
-			<input type="radio" name="tab" id="tab4" class="tab-head4" />
-			<label for="tab4"><img src="/ligue-1.png">League One</label>
-		<div class="tab-body-wrapper">
-			<div id="tab-body-1" class="tab-body">
-			  <h1>English Premier League</h1>
-			  <div class="match-one">
-			  <span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-			  <div class="match-team">
-			 <span class="teamA">Tottenham Hotspur</span>
-			 <span class="right-b">-</span>
-			 <span class="teamB">Aston Villa</span>
-			 <div class="predict-btn">
-			 <button class="btns">View Predictions</button>
-			</div>
-		</div>
-		</div>
-			
-
-		<div class="match-one">
-			<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+		<div class="background">
+	
+		<ul class="overlay nav nav-pills mb-3 col-md-12 col-xl-12 col-sm-0" id="pills-tab" role="tablist">
+	
+		
+		  <li class="nav-item">
+			<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><img src="assets/download.png">English Premier League</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="pills-profile-tab1" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="assets/laliga.png">Laliga</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="pills-contact-tab2" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="assets/bundesliga.png">Bundesliga</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="pills-contact-tab3" data-toggle="pill" href="#pills-contact1" role="tab" aria-controls="pills-contact1" aria-selected="false"><img src="assets/serie-a.png">Serie A</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="pills-contact-tab4" data-toggle="pill" href="#pills-contact2" role="tab" aria-controls="pills-contact2" aria-selected="false"><img src="assets/ligue-1.png">League One</a>
+		  </li>
+		</ul>
+		<div class="container tab-content" id="pills-tabContent">
+		  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><h1>English Premier League</h1>
+			<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
 			<div class="match-team">
 		   <span class="teamA">Tottenham Hotspur</span>
 		   <span class="right-b">-</span>
 		   <span class="teamB">Aston Villa</span>
-		   <div class="predict-btn">
-		   <button class="btns">View Predictions</button>
+		   <a href="Leagues\English\01\prediction.html"><button class="btns">View Predictions</button></a>
 		  </div>
-	  </div>
-	  </div>
+		</div>
 
-	  <div class="match-one">
-		<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-		<div class="match-team">
-	   <span class="teamA">Tottenham Hotspur</span>
-	   <span class="right-b">-</span>
-	   <span class="teamB">Aston Villa</span>
-	   <div class="predict-btn">
-	   <button class="btns">View Predictions</button>
-	  </div>
-  </div>
-  </div>
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\02"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 
-  <div class="match-one">
-	<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-	<div class="match-team">
-   <span class="teamA">Tottenham Hotspur</span>
-   <span class="right-b">-</span>
-   <span class="teamB">Aston Villa</span>
-   <div class="predict-btn">
-   <button class="btns">View Predictions</button>
-  </div>
-</div>
-</div>
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\03"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 
-<div class="match-one">
-	<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-	<div class="match-team">
-   <span class="teamA">Tottenham Hotspur</span>
-   <span class="right-b">-</span>
-   <span class="teamB">Aston Villa</span>
-   <div class="predict-btn">
-   <button class="btns">View Predictions</button>
-  </div>
-</div>
-</div>
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\04"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 
-<div class="match-one">
-	<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-	<div class="match-team">
-   <span class="teamA">Tottenham Hotspur</span>
-   <span class="right-b">-</span>
-   <span class="teamB">Aston Villa</span>
-   <div class="predict-btn">
-   <button class="btns">View Predictions</button>
-  </div>
-</div>
-</div>
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\05"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\06"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 
-<div class="match-one">
-	<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-	<div class="match-team">
-   <span class="teamA">Tottenham Hotspur</span>
-   <span class="right-b">-</span>
-   <span class="teamB">Aston Villa</span>
-   <div class="predict-btn">
-   <button class="btns">View Predictions</button>
-  </div>
-</div>
-</div>
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\07"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\08"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 
-<div class="match-one">
-	<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-	<div class="match-team">
-   <span class="teamA">Tottenham Hotspur</span>
-   <span class="right-b">-</span>
-   <span class="teamB">Aston Villa</span>
-   <div class="predict-btn">
-   <button class="btns">View Predictions</button>
-  </div>
-</div>
-</div>
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\09"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 
-<div class="match-one">
-	<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-	<div class="match-team">
-   <span class="teamA">Tottenham Hotspur</span>
-   <span class="right-b">-</span>
-   <span class="teamB">Aston Villa</span>
-   <div class="predict-btn">
-   <button class="btns">View Predictions</button>
-  </div>
-</div>
-</div>
-
-<div class="match-one">
-	<span class="match-date mt-5">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
-	<div class="match-team">
-   <span class="teamA">Tottenham Hotspur</span>
-   <span class="right-b">-</span>
-   <span class="teamB">Aston Villa</span>
-   <div class="predict-btn">
-   <button class="btns">View Predictions</button>
-  </div>
-</div>
-</div>
+		<div class="match-move">
+			<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+			<div class="match-team">
+		   <span class="teamA">Tottenham Hotspur</span>
+		   <span class="right-b">-</span>
+		   <span class="teamB">Aston Villa</span>
+		   <a href="Leagues\English\10"><button class="btns">View Predictions</button></a>
+		  </div>
+		</div>
 		  
+	</div>
+		<!-------------------match1 end------------------->
+		
+		  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab1">
+			<h1>Laliga</h1>
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
 			</div>
-		</div>
-			<div id="tab-body-2" class="tab-body">
-			  <h1>Tab 2 heading</h1>
-			  <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short ribs pancetta boudin. Occaecat mollit in laboris ham hock bresaola corned beef flank hamburger aute chicken id t-bone.</p>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
 			</div>
-			<div id="tab-body-3" class="tab-body">
-			  <h1>Tab 3 heading</h1>
-			  <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short ribs pancetta boudin. Occaecat mollit in laboris ham hock bresaola corned beef flank hamburger aute chicken id t-bone.</p>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
 			</div>
-			<div id="tab-body-4" class="tab-body">
-			  <h1>Tab 4 heading</h1>
-			  <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short ribs pancetta boudin. Occaecat mollit in laboris ham hock bresaola corned beef flank hamburger aute chicken id t-bone.</p>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
 			</div>
 		  </div>
+
+		  <!---------------------------Match 2 end===============------------------>
+		  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab2"><h1>Bundesliga</h1>
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
 		</div>
+		
+		<div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab3"><h1>Serie A</h1>
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab4"><h1>League One</h1>
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+
+			<div class="match-move">
+				<span class="match-date">2021-05-19 <span class="borders"></span><span class="match-time">17:00</span></span>
+				<div class="match-team">
+			   <span class="teamA">Tottenham Hotspur</span>
+			   <span class="right-b">-</span>
+			   <span class="teamB">Aston Villa</span>
+			   <a href="predictions"><button class="btns">View Predictions</button></a>
+			  </div>
+			</div>
+		</div>
+		</div>
+	
+	
+			
+	
+		
 		<!-- Navebar Area start -->
 		
 
@@ -294,7 +681,6 @@
 
 	
 				<div class="col-lg-3 col-md-0">
-					<!-- Trigger/Open The Modal -->
 					<button id="myBtn" class="modal-trigger no-select">Bet Slip</button>
 
 					<!-- The Modal -->
@@ -438,180 +824,7 @@
 	</script>
 
 
-	<!-- upcoming match begin
-	<div class="upcoming-match" id="upcoming_match">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-xl-6 col-lg-6 col-md-8">
-					<div class="section-title">
-						<h2>Upcoming Match</h2>
-						<p>Sport Einstein shows real time odds for Prediction with the higher stakes you can get. We
-							place your bets in various bMakers to do highest liquidity</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xl-6 col-lg-6">
-					<div class="single-match">
-						<div class="part-head">
-							<h5 class="match-title">Einstein 2021 Semi Final</h5>
-							<span class="match-venue">Venue : Aiivon Hub, St James House, 167 Adetokumbo Ademola
-								Crescent</span>
-						</div>
-						<div class="part-team">
-							<div class="single-team">
-								<div class="logo">
-									<img src="assets/img/team-1.png" alt="">
-								</div>
-								<span class="team-name">Premier League</span>
-							</div>
-							<div class="match-details">
-								<div class="match-time">
-									<span class="date">Mon 24 July 2021</span>
-									<span class="times">09:00 am</span>
-								</div>
-								<span class="versase">vs</span>
-								<div class="buttons">
-									<a href="#" class="buy-ticket bet-btn bet-btn-dark-light">Predict Now</a>
-								</div>
-							</div>
-							<div class="single-team">
-								<div class="logo">
-									<img src="assets/img/team-2.png" alt="">
-								</div>
-								<span class="team-name">England International</span>
-							</div>
-						</div>
-						<span class="to-begin-time">
-							Starting on
-						</span>
-						<div class="count-area">
-							<div class="deal-counter">
-								<div class= "d-flex part-timer timer" data-date="30 April 2021 9:56:00 GMT+01:00">
-									<div class="single-time">
-										<span id="dayss" class="numbers day ml-4">01</span>
-										
-									</div>
-									<div class="single-time">
-										<span id="hourss" class="numbers hour ml-4">24</span>
-										
-									</div>
-									<div class="single-time">
-										<span id="minutes" class="numbers minute ml-4">48</span>
-										
-									</div>
-									<div class="single-time">
-										<span id="secs" class="numbers second ml-4">11</span>
-										
-									</div>
-								</div>
-								<div data-countdown="2021/06/30"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-6">
-					<div class="upcoming-match-list">
-						<div class="single-upcoming-match">
-							<div class="single-team">
-								<div class="part-logo">
-									<img src="assets/img/team-1.png" alt="">
-								</div>
-								<div class="part-text">
-									<span class="team-name">
-										Premier League
-									</span>
-								</div>
-							</div>
-							<span class="versase">vs</span>
-							<div class="single-team">
-								<div class="part-text">
-									<span class="team-name">
-										England International
-									</span>
-								</div>
-								<div class="part-logo">
-									<img src="assets/img/team-2.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="single-upcoming-match">
-							<div class="single-team">
-								<div class="part-logo">
-									<img src="assets/img/team-3.png" alt="">
-								</div>
-								<div class="part-text">
-									<span class="team-name">
-										Premier League
-									</span>
-								</div>
-							</div>
-							<span class="versase">vs</span>
-							<div class="single-team">
-								<div class="part-text">
-									<span class="team-name">
-										England International
-									</span>
-								</div>
-								<div class="part-logo">
-									<img src="assets/img/team-4.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="single-upcoming-match">
-							<div class="single-team">
-								<div class="part-logo">
-									<img src="assets/img/team-5.png" alt="">
-								</div>
-								<div class="part-text">
-									<span class="team-name">
-										CG challenge
-									</span>
-								</div>
-							</div>
-							<span class="versase">vs</span>
-							<div class="single-team">
-								<div class="part-text">
-									<span class="team-name">
-										England International
-									</span>
-								</div>
-								<div class="part-logo">
-									<img src="assets/img/team-6.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="single-upcoming-match">
-							<div class="single-team">
-								<div class="part-logo">
-									<img src="assets/img/team-7.png" alt="">
-								</div>
-								<div class="part-text">
-									<span class="team-name">
-										Nigeria
-									</span>
-								</div>
-							</div>
-							<span class="versase">vs</span>
-							<div class="single-team">
-								<div class="part-text">
-									<span class="team-name">
-										India
-									</span>
-								</div>
-								<div class="part-logo">
-									<img src="assets/img/team-8.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		
-		</div>
-	</div> -->
-	<!-- upcoming match end -->
+	
 
 	<!-----Prediction Tips--------->
 	
@@ -717,11 +930,6 @@
 	
 ---Prediction Tips------- -->
 	<!-- footer area start -->
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
 	<footer class="footer-area footer-bg">
 		<div class="overlay"></div>
 		<div class="footer-top">

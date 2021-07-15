@@ -894,6 +894,58 @@
 }
 }
 
+/*----------------Mobile Responsive-------*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .pulse {
+        width: 10px;
+        height: 10px;
+        border: 5px solid #ff0000;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        background-color: #716f42;
+        margin-left:-12px;
+        top:65px;
+        position: absolute;
+        animation: 1s blink ease infinite;
+      }
+}
+
+
+@media only screen
+and (max-device-width : 500px)
+and (min-device-width : 524px) {
+
+    .pulse {
+        width: 10px;
+        height: 10px;
+        border: 5px solid #000000;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        background-color: #000000;
+        margin-left:-12px;
+        top:19px;
+        position: absolute;
+        animation: 1s blink ease infinite;
+      }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+/*------------------Laptops and desktops----------*/
+@media only screen
+and (min-width : 1224px) {
+ 
+}
 
 
 
